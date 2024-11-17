@@ -12,7 +12,7 @@ const Navbar = () => {
             <Link to="/">EcoVent</Link>
           </h3>
         </div>
-        <div className="flex flex-row *:py-1.5 *:px-4 *:rounded-md">
+        <div className="flex-row *:py-1.5 *:px-4 *:rounded-md hidden md:flex">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/about">About</NavLink>
