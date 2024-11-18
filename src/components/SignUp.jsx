@@ -7,10 +7,8 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
 
 const SignUp = () => {
-  const { show, setShow, user, setUser, setError, error } =
+  const { show, setShow, setUser, setError, error, signUpWithGoogle } =
     useContext(ProviderContext);
-  console.log(user);
-  console.log(error);
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -41,6 +39,11 @@ const SignUp = () => {
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-2 text-center">
           Register Your Account
         </h2>
+        {error && (
+          <p className="text-red-500 my-2 text-center text-sm">
+            {error.message}
+          </p>
+        )}
         <input
           name="name"
           className="input input-warning focus:outline-none border-base-300"
@@ -86,7 +89,10 @@ const SignUp = () => {
             Create Account
           </Link>
         </p>
-        <button className="btn bg-base-300 hover:bg-primary text-black">
+        <button
+          onClick={signUpWithGoogle}
+          className="btn bg-base-300 hover:bg-primary text-black"
+        >
           <FaGoogle />
           Continue with google
         </button>
