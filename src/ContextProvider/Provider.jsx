@@ -14,8 +14,8 @@ const Provider = ({ children }) => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
+  const [data, setData] = useState([]);
   // const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -33,7 +33,6 @@ const Provider = ({ children }) => {
         setError(error);
       });
   };
-
   const info = {
     setShow,
     show,
@@ -42,6 +41,8 @@ const Provider = ({ children }) => {
     error,
     setError,
     signUpWithGoogle,
+    data,
+    setData,
   };
   return (
     <ProviderContext.Provider value={info}>{children}</ProviderContext.Provider>

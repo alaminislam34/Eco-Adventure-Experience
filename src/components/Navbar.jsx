@@ -18,16 +18,22 @@ const Navbar = () => {
   };
   const handleLogOut = () => signOut(auth).then().catch();
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true,
+    });
   }, []);
 
   return (
     <div>
-      <nav className="flex flex-row justify-between items-center py-3 w-11/12 mx-auto">
+      <nav className="flex flex-row justify-between items-center py-2 w-11/12 mx-auto">
         <div className="flex flex-row items-center gap-2">
           <div className="drawer md:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
+            <div
+              className="drawer-content"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               {/* Page content here */}
               <label htmlFor="my-drawer-4" className="drawer-button ">
                 <RiMenu2Fill />
@@ -47,7 +53,7 @@ const Navbar = () => {
             </div>
           </div>
           <h3
-            className="font-playFair text-xl md:text-2xl lg:text-3xl font-semibold"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -64,12 +70,12 @@ const Navbar = () => {
           <NavLink to="/about">About</NavLink>
         </div>
         <div
-          className="flex flex-row gap-2 items-center"
+          className="flex flex-row gap-2 items-center z-50"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
           {user ? (
-            <div className="relative">
+            <div className="relative z-[1000]">
               <button onClick={handleProfileDetailsShow}>
                 {user?.photoURL ? (
                   <img
@@ -82,19 +88,29 @@ const Navbar = () => {
                 )}
               </button>
               {profileDe === true && (
-                <div className="absolute top-14 md:top-16 right-0 max-w-xs max-h-[300px] bg-base-200 rounded-lg shadow-xl border-2 border-darkPri z-50">
+                <div className="absolute top-14 md:top-16 right-0 w-44 md:w-60  max-h-[300px] rounded-lg shadow-xl bg-white border-2 border-darkPri z-[1000] ">
                   <ul className="md:*:py-2 *:py-1.5 *:text-sm md:*:text-base md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1">
-                    <li className="text-sm md:text-base shadow-inner">
-                      {user.email}
-                    </li>
-                    <li className="text-sm md:text-base hover:bg-darkPri font-medium cursor-pointer shadow-inner">
-                      profiile
+                    <li
+                      data-aos="zoom-in-up"
+                      data-aos-duration="1000"
+                      className="text-sm md:text-base font-semibold"
+                    >
+                      {user.displayName}
                     </li>
                     <li
-                      onClick={handleLogOut}
-                      className="text-sm md:text-base hover:bg-darkPri font-medium cursor-pointer shadow-inner"
+                      data-aos="zoom-in-up"
+                      data-aos-duration="1000"
+                      className="text-xs md:text-sm hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
                     >
-                      log out
+                      Profile
+                    </li>
+                    <li
+                      data-aos="zoom-in-up"
+                      data-aos-duration="1000"
+                      onClick={handleLogOut}
+                      className="text-xs md:text-sm hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
+                    >
+                      Log out
                     </li>
                   </ul>
                 </div>
@@ -102,6 +118,8 @@ const Navbar = () => {
             </div>
           ) : (
             <button
+              data-aos="zoom-in"
+              data-aos-duration="1500"
               onClick={() => navigate("/login")}
               className="bg-primary hover:bg-darkPri md:py-2 md:px-4 py-1.5 px-3 text-sm md:text-base rounded-lg flex flex-row gap-2 justify-center items-center font-medium"
             >

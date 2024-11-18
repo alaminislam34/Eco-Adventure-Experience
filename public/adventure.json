@@ -1,10 +1,140 @@
 [
   {
     "id": 1,
+    "adventureTitle": "Mountain Treks",
+    "image": "https://wittypen.com/blog/wp-content/uploads/2017/08/Trekking-the-himalayas.webp",
+    "categoryName": "Hiking Adventures",
+    "shortDescription": "Embark on breathtaking treks through scenic mountain trails.",
+    "longDescription": "Experience the thrill of trekking through the majestic Himalayas, where each step offers a unique view of nature's wonders. Traverse through lush valleys, sparkling streams, and snow-capped peaks with expert guides ensuring your safety. Along the way, you will stay in eco-friendly accommodations and enjoy meals prepared from locally sourced ingredients.",
+    "adventureCost": 150,
+    "bookingAvailability": true,
+    "location": "Himalayas, Nepal",
+    "duration": "5 days",
+    "adventureLevel": "Challenging",
+    "includedItems": [
+      "Professional guide",
+      "Trekking poles",
+      "Meals and accommodation"
+    ],
+    "ecoFriendlyFeatures": [
+      "Minimal waste policy",
+      "Local community support",
+      "Eco-friendly gear"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Wear sturdy hiking boots",
+      "Carry a reusable water bottle",
+      "Pack warm layers"
+    ]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Ocean Dives",
+    "image": "https://blue-ocean-divers.eu/wp-content/uploads/2020/01/cropped-pool_4_final.jpg",
+    "categoryName": "Water Adventures",
+    "shortDescription": "Dive into crystal-clear waters and explore vibrant coral reefs.",
+    "longDescription": "Discover the underwater world like never before with our guided ocean dives. Swim alongside exotic marine life, from colorful coral to playful dolphins. Our experienced diving instructors will provide you with all the necessary training and eco-friendly gear to ensure a safe and memorable diving experience.",
+    "adventureCost": 200,
+    "bookingAvailability": true,
+    "location": "Great Barrier Reef, Australia",
+    "duration": "6 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Diving gear", "Safety training", "Snacks on the boat"],
+    "ecoFriendlyFeatures": [
+      "Support for marine conservation",
+      "Biodegradable equipment",
+      "Plastic-free excursions"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Do not touch marine life",
+      "Apply biodegradable sunscreen",
+      "Follow diving safety protocols"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Wildlife Safaris",
+    "image": "https://cdn.adventure-life.com/11/64/17/Jeep/1300x820.webp",
+    "categoryName": "Wildlife Adventures",
+    "shortDescription": "Experience thrilling safaris and witness exotic wildlife up close.",
+    "longDescription": "Immerse yourself in the heart of the wild with our eco-friendly wildlife safaris. Explore vast landscapes teeming with diverse flora and fauna. Led by expert guides, these safaris not only offer unforgettable encounters with wildlife but also educate participants about conservation efforts to protect these incredible ecosystems.",
+    "adventureCost": 250,
+    "bookingAvailability": true,
+    "location": "Serengeti National Park, Tanzania",
+    "duration": "7 hours",
+    "adventureLevel": "Easy",
+    "includedItems": ["Professional guide", "Binoculars", "Lunch"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered vehicles",
+      "Wildlife conservation donations",
+      "No single-use plastics"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Wear neutral-colored clothing",
+      "Do not feed animals",
+      "Stay within designated areas"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Forest Expeditions",
+    "image": "https://taxonexpeditions.com/wp-content/uploads/2023/10/Taxon-Expeditions_Borneo.jpg",
+    "categoryName": "Nature Walks",
+    "shortDescription": "Explore dense forests and discover their hidden treasures.",
+    "longDescription": "Venture deep into the forest with our guided expeditions, designed for nature enthusiasts and adventurers alike. Learn about the unique flora and fauna from expert naturalists while enjoying the serene beauty of untouched nature. This eco-friendly experience focuses on minimal disruption to the ecosystem.",
+    "adventureCost": 120,
+    "bookingAvailability": true,
+    "location": "Black Forest, Germany",
+    "duration": "5 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Expert guide", "Snacks", "Binoculars"],
+    "ecoFriendlyFeatures": [
+      "Leave-no-trace policy",
+      "Eco-friendly trails",
+      "Support for reforestation"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Wear comfortable hiking gear",
+      "Bring insect repellent",
+      "Avoid picking plants"
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Camping Retreats",
+    "image": "https://bunny-wp-pullzone-yovalxacrl.b-cdn.net/wp-content/uploads/2023/03/6-Fun-Games-To-Play-With-Your-Family-When-Camping.webp",
+    "categoryName": "Outdoor Adventures",
+    "shortDescription": "Relax and unwind in eco-friendly camping retreats.",
+    "longDescription": "Escape the hustle and bustle of city life with our serene camping retreats. Set up camp in stunning natural settings, enjoy stargazing, and reconnect with nature. With eco-friendly camping practices and local guides, this adventure is perfect for families and solo travelers alike.",
+    "adventureCost": 100,
+    "bookingAvailability": true,
+    "location": "Yosemite National Park, USA",
+    "duration": "2 days",
+    "adventureLevel": "Easy",
+    "includedItems": ["Tent rental", "Cooking equipment", "Firewood"],
+    "ecoFriendlyFeatures": [
+      "Compostable waste bags",
+      "Solar-powered lighting",
+      "Local campsite maintenance"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Pack warm sleeping bags",
+      "Carry a flashlight",
+      "Do not leave any trash behind"
+    ]
+  },
+  {
+    "id": 6,
     "adventureTitle": "Rainforest Canopy Walk",
-    "image": "rainforest_canopy.jpg",
+    "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*w0A0GMLr5GxmbyIoZjHsOA.jpeg",
     "categoryName": "Nature Walks",
     "shortDescription": "Explore the stunning rainforest canopy from above.",
+    "longDescription": "This adventure takes you high above the rainforest floor to explore the canopy from a unique perspective. Enjoy breathtaking views, learn about the ecosystem, and immerse yourself in the lush greenery of the Amazon rainforest. A perfect blend of education and adventure awaits you in this unforgettable experience.",
     "adventureCost": 150,
     "bookingAvailability": true,
     "location": "Amazon Rainforest, Brazil",
@@ -24,11 +154,12 @@
     ]
   },
   {
-    "id": 2,
+    "id": 7,
     "adventureTitle": "Mangrove Kayaking Adventure",
-    "image": "mangrove_kayaking.jpg",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DkvugqrKogaAAb3iKqF8hg.jpeg",
     "categoryName": "Water Adventures",
     "shortDescription": "Kayak through pristine mangroves and observe local wildlife.",
+    "longDescription": "Paddle through the serene waterways of the mangroves, surrounded by lush greenery and diverse wildlife. This eco-friendly adventure allows you to observe birds, fish, and even reptiles in their natural habitat. Perfect for nature lovers and those seeking a peaceful yet adventurous experience.",
     "adventureCost": 100,
     "bookingAvailability": true,
     "location": "Everglades, Florida, USA",
@@ -48,11 +179,12 @@
     ]
   },
   {
-    "id": 3,
+    "id": 8,
     "adventureTitle": "Desert Stargazing Experience",
-    "image": "desert_stargazing.jpg",
+    "image": "https://www.thechic.us/wp-content/uploads/2023/03/How-to-Have-the-Best-Stargazing-Experience-on-Your-Outdoor-Adventure.jpg",
     "categoryName": "Night Adventures",
     "shortDescription": "Experience the magic of the desert under a canopy of stars.",
+    "longDescription": "Discover the beauty of the night sky in the vast expanse of the Sahara Desert. This guided stargazing session includes telescopes and expert insights into constellations, planets, and celestial phenomena. Ideal for astronomy enthusiasts and those looking for a tranquil yet magical escape.",
     "adventureCost": 80,
     "bookingAvailability": true,
     "location": "Sahara Desert, Morocco",
@@ -72,11 +204,12 @@
     ]
   },
   {
-    "id": 4,
+    "id": 9,
     "adventureTitle": "Coral Reef Snorkeling",
-    "image": "coral_reef_snorkeling.jpg",
+    "image": "https://res.cloudinary.com/adrenalinecomau/image/upload/q_auto,f_auto/v1647564370/adventures/eps_18239.jpg",
     "categoryName": "Water Adventures",
     "shortDescription": "Snorkel among vibrant coral reefs teeming with marine life.",
+    "longDescription": "Dive into the underwater world of the Great Barrier Reef and marvel at its vibrant coral and marine diversity. This guided snorkeling tour provides insights into coral preservation while offering a chance to spot colorful fish, turtles, and other sea creatures. Perfect for ocean lovers!",
     "adventureCost": 120,
     "bookingAvailability": true,
     "location": "Great Barrier Reef, Australia",
@@ -100,11 +233,12 @@
     ]
   },
   {
-    "id": 5,
+    "id": 10,
     "adventureTitle": "Mountain Biking Through the Rockies",
-    "image": "rockies_biking.jpg",
+    "image": "https://crmr.com/wp-content/uploads/2021/02/Activites_TM_Biking2.jpg",
     "categoryName": "Adventure Sports",
     "shortDescription": "Ride through breathtaking mountain trails in the Rockies.",
+    "longDescription": "Get ready for an exhilarating ride through rugged mountain terrain. This guided biking adventure takes you through scenic trails with challenging routes for experienced bikers. Along the way, enjoy breathtaking views of valleys, forests, and peaks, making it an unforgettable outdoor adventure.",
     "adventureCost": 200,
     "bookingAvailability": true,
     "location": "Rocky Mountains, Colorado, USA",
@@ -128,11 +262,12 @@
     ]
   },
   {
-    "id": 6,
+    "id": 11,
     "adventureTitle": "Arctic Ice Cave Expedition",
-    "image": "arctic_ice_cave.jpg",
+    "image": "https://res.cloudinary.com/hfyvkoyi1/image/upload/c_scale,f_auto,h_1280,q_auto/Arctic-Adventures-Katla-Ice-Cave-Myrdalsjokull-1_fleroq.jpg",
     "categoryName": "Extreme Adventures",
     "shortDescription": "Explore the beauty of ice caves in the Arctic wilderness.",
+    "longDescription": "Embark on an awe-inspiring journey through frozen ice caves, guided by experts in Arctic exploration. Witness crystal-clear ice formations and learn about the region's unique geology and climate. This adventure is ideal for thrill-seekers and nature enthusiasts.",
     "adventureCost": 300,
     "bookingAvailability": false,
     "location": "Svalbard, Norway",
@@ -152,11 +287,12 @@
     ]
   },
   {
-    "id": 7,
+    "id": 12,
     "adventureTitle": "Jungle Survival Training",
-    "image": "jungle_survival.jpg",
+    "image": "https://www.pelago.com/img/products/PE-Peru/7-day-jungle-survival-training-in-iquitos/87f0241c-3c03-4ad8-b871-bc008596344a_7-day-jungle-survival-training-in-iquitos-xlarge.jpg",
     "categoryName": "Skill Development",
     "shortDescription": "Learn essential survival skills in a jungle environment.",
+    "longDescription": "Join an intensive survival training program in the heart of the jungle. Learn to build shelters, find water, and navigate through dense forests. This hands-on experience will test your resilience and prepare you for real-life survival scenarios.",
     "adventureCost": 180,
     "bookingAvailability": true,
     "location": "Borneo, Malaysia",
@@ -180,11 +316,12 @@
     ]
   },
   {
-    "id": 8,
+    "id": 13,
     "adventureTitle": "Eco Safari",
-    "image": "eco_safari.jpg",
+    "image": "https://caselaparks.com/wp-content/uploads/2023/08/Le-Safari-Eco-Rider-fonctionne-entierement-a-lelectricite-offrant-aux-visiteurs-une-nouvelle-maniere-ecologique-de-profiter-de-la-nature-sans-la-perturber-min-scaled.jpg",
     "categoryName": "Wildlife Adventures",
     "shortDescription": "Embark on an eco-friendly safari to spot diverse wildlife.",
+    "longDescription": "Experience the thrill of spotting wild animals in their natural habitat on an eco-friendly safari. Learn about conservation efforts while enjoying the stunning scenery of the Serengeti. This adventure combines education with the joy of exploration.",
     "adventureCost": 250,
     "bookingAvailability": true,
     "location": "Serengeti National Park, Tanzania",
@@ -204,11 +341,12 @@
     ]
   },
   {
-    "id": 9,
+    "id": 14,
     "adventureTitle": "Volcano Hike",
-    "image": "volcano_hike.jpg",
+    "image": "https://bustravel.is/wp-content/uploads/2023/09/Volcano-Reykjanes-smiley-faces-3-2-IMG_2897.jpg",
     "categoryName": "Hiking Adventures",
     "shortDescription": "Hike up an active volcano and enjoy breathtaking views.",
+    "longDescription": "Ascend the slopes of an active volcano for a once-in-a-lifetime experience. With the guidance of local experts, enjoy panoramic views and learn about the geological forces that shape our planet. A perfect adventure for hiking enthusiasts and nature lovers.",
     "adventureCost": 140,
     "bookingAvailability": true,
     "location": "Mount Bromo, Indonesia",
@@ -228,11 +366,12 @@
     ]
   },
   {
-    "id": 10,
+    "id": 15,
     "adventureTitle": "Forest Meditation Retreat",
-    "image": "forest_meditation.jpg",
+    "image": "https://www.sivananda.at/wp-content/uploads/2022/08/meditation-retreat.jpg",
     "categoryName": "Wellness Adventures",
     "shortDescription": "Reconnect with nature through guided meditation in the forest.",
+    "longDescription": "Step away from the chaos of daily life and reconnect with nature on this meditation retreat. Enjoy the serenity of the Black Forest as you engage in guided relaxation techniques. This retreat is ideal for anyone seeking peace and mindfulness.",
     "adventureCost": 100,
     "bookingAvailability": true,
     "location": "Black Forest, Germany",
@@ -253,6 +392,135 @@
       "Wear comfortable clothing",
       "Turn off all electronic devices",
       "Arrive 15 minutes early for preparation"
+    ]
+  },
+  {
+    "id": 16,
+    "adventureTitle": "Camping Retreats",
+    "image": "https://campcanaan.org/wp-content/uploads/2024/09/camp-canaan-fire-pit-in-action-2-960x480.jpg",
+    "categoryName": "Nature Retreats",
+    "shortDescription": "Unwind and reconnect with nature through serene camping experiences.",
+    "longDescription": "Escape the hustle of city life and immerse yourself in the tranquility of nature. Enjoy a peaceful camping retreat under the stars, surrounded by lush greenery and gentle breezes. With eco-friendly setups, this retreat promotes sustainability while offering amenities such as campfires, local meals, and guided forest walks.",
+    "adventureCost": 80,
+    "bookingAvailability": true,
+    "location": "Blue Ridge Mountains, USA",
+    "duration": "2 nights",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Tents and sleeping bags",
+      "Campfire meals",
+      "Guided nature walks"
+    ],
+    "ecoFriendlyFeatures": [
+      "Reusable camping gear",
+      "Local community support",
+      "Leave-no-trace principles"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Bring warm clothing",
+      "Avoid single-use plastics",
+      "Follow campsite rules"
+    ]
+  },
+  {
+    "id": 17,
+    "adventureTitle": "River Adventures",
+    "image": "https://visit-eldorado.com/wp-content/uploads/2023/05/oarsamericanriveroutpost-Instagram-3431-ig-17929154054156040-1024x680.jpg",
+    "categoryName": "Water Adventures",
+    "shortDescription": "Experience the thrill of river rafting and kayaking.",
+    "longDescription": "Navigate the rapids of scenic rivers with experienced guides leading the way. This adventure combines the excitement of water sports with the serene beauty of untouched natural landscapes. Suitable for all skill levels, enjoy the thrill while contributing to river conservation efforts.",
+    "adventureCost": 120,
+    "bookingAvailability": true,
+    "location": "Zambezi River, Zambia",
+    "duration": "4 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Rafting gear", "Safety equipment", "Refreshments"],
+    "ecoFriendlyFeatures": [
+      "Non-motorized activities",
+      "Eco-certified guides",
+      "Support for river clean-up projects"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Wear waterproof clothing",
+      "Carry a reusable water bottle",
+      "Listen to safety instructions"
+    ]
+  },
+  {
+    "id": 18,
+    "adventureTitle": "Mangrove Forest Expeditions",
+    "image": "https://image-tc.galaxy.tf/wijpeg-18r9rcd6j1omr8bce7s1nipon/30-kayak-tour-guided-couple_standard.jpg?crop=107%2C0%2C1707%2C1280",
+    "categoryName": "Nature Walks",
+    "shortDescription": "Explore the unique biodiversity of mangrove forests.",
+    "longDescription": "Venture into serene mangrove forests, where land meets the sea. Learn about the ecosystem that supports an incredible variety of wildlife while paddling through narrow waterways. This eco-tour promotes mangrove preservation and fosters a deep appreciation for these vital ecosystems.",
+    "adventureCost": 100,
+    "bookingAvailability": true,
+    "location": "Sundarbans, Bangladesh",
+    "duration": "3 hours",
+    "adventureLevel": "Easy",
+    "includedItems": ["Kayaks", "Binoculars", "Local guide"],
+    "ecoFriendlyFeatures": [
+      "Mangrove preservation education",
+      "Use of sustainable equipment",
+      "Wildlife-friendly practices"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear sun protection",
+      "Avoid loud noises",
+      "Respect local wildlife"
+    ]
+  },
+  {
+    "id": 19,
+    "adventureTitle": "Desert Exploration",
+    "image": "https://www.pelago.com/img/products/MA-Morocco/desert-experience-mhamid-3-days-and-2-nights-from-marrakech/724bd9e4-fe21-4b35-875c-7c7c9939a763_desert-experience-mhamid-3-days-and-2-nights-from-marrakech-medium.jpg",
+    "categoryName": "Extreme Adventures",
+    "shortDescription": "Discover the vast beauty of deserts and their hidden secrets.",
+    "longDescription": "Embark on a thrilling desert safari and uncover the hidden wonders of arid landscapes. From sand dune bashing to camel treks, immerse yourself in the mystique of the desert while learning about its unique ecosystem. Eco-friendly practices ensure minimal impact on this delicate environment.",
+    "adventureCost": 180,
+    "bookingAvailability": true,
+    "location": "Sahara Desert, Morocco",
+    "duration": "6 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Camel rides", "Refreshments", "Local guide"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered camps",
+      "Support for local nomadic communities",
+      "Waste-free practices"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry a scarf or hat",
+      "Use eco-friendly sunscreen",
+      "Stay hydrated"
+    ]
+  },
+  {
+    "id": 20,
+    "adventureTitle": "Sajek Valley Trekking Adventure",
+    "image": "https://tourbuzzbd.com/wp-content/uploads/2023/08/Sajek-Valley-01-1568x882.jpg",
+    "categoryName": "Hiking Adventures",
+    "shortDescription": "Discover the breathtaking beauty of the 'Queen of Hills' in Bangladesh.",
+    "longDescription": "Sajek Valley, known as the 'Queen of Hills,' offers an unforgettable trekking experience through lush greenery, rolling hills, and mesmerizing clouds. This adventure takes you through local tribal villages, vibrant landscapes, and serene mountain paths, making it a perfect getaway for nature enthusiasts. Learn about local culture while exploring eco-friendly routes and enjoying panoramic views.",
+    "adventureCost": 70,
+    "bookingAvailability": true,
+    "location": "Sajek Valley, Rangamati, Bangladesh",
+    "duration": "5 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Local guide", "Snacks", "Trekking poles"],
+    "ecoFriendlyFeatures": [
+      "Promotion of local tribal culture",
+      "Use of marked eco-trails",
+      "No-plastic trekking"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Wear comfortable hiking shoes",
+      "Carry a raincoat during monsoon season",
+      "Respect local customs and communities"
     ]
   }
 ]

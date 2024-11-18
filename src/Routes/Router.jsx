@@ -3,6 +3,9 @@ import MainLayout from "../MainLayout/MainLayout";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import AdventurePlace from "../components/AdventurePlace";
+import Home from "../pages/Home";
+import Banner from "../components/Banner";
+import Details from "../pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,23 @@ const router = createBrowserRouter([
         path: "/adventure",
         element: <AdventurePlace />,
         loader: () => fetch("adventure.json"),
+      },
+      {
+        path: "/",
+        element: <Home />,
+        loader: () => fetch("adventure.json"),
+        children: [
+          {
+            path: "/",
+            element: <Banner />,
+          },
+        ],
+      },
+
+      {
+        path: "/details/:id",
+        element: <Details />,
+        loader: () => fetch("/adventure.json"),
       },
       {
         path: "*",
