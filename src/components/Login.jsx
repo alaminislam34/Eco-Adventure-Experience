@@ -1,15 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import Aos from "aos";
 
 const Login = () => {
-  const { show, setShow, user, setUser, setError, signUpWithGoogle } =
+  const { show, setShow, error, setUser, setError, signUpWithGoogle } =
     useContext(ProviderContext);
-  console.log(user);
+  const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -17,30 +18,55 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
+        navigate("/");
       })
       .catch((error) => {
         setError(error);
       });
   };
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="flex justify-center max-w-md mx-auto items-center h-full my-6">
       <form
+        data-aos="zoom-in"
+        data-aos-duration="800"
         onSubmit={handleSignIn}
-        className="flex flex-col gap-4 border shadow-2xl p-6 rounded-xl w-full"
+        className="flex flex-col gap-4 border shadow-2xl p-6 rounded-xl w-full bg-white"
       >
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-2 text-center">
+        <h2
+          data-aos="zoom-in-down"
+          data-aos-duration="1400"
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-center"
+        >
           Login
         </h2>
+        {error ? (
+          <p className="text-red-500 text-sm text-center my-2">
+            {error.message}
+          </p>
+        ) : (
+          ""
+        )}
         <input
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
           name="email"
-          className="input input-warning focus:outline-none border-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 bg-base-300"
           type="email"
           placeholder="Your email"
         />
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos="zoom-in-down"
+          data-aos-duration="1400"
+        >
           <input
             name="password"
-            className="input input-warning focus:outline-none border-base-300 w-full"
+            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
             type={show ? "text" : "password"}
             placeholder="Your password"
           />
@@ -52,26 +78,38 @@ const Login = () => {
             {show ? <LiaEyeSolid /> : <LiaEyeSlashSolid />}
           </button>
         </div>
-        <button className="underline text-sm font-semibold text-left pl-2">
+        <button
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          className="underline text-sm font-semibold text-left pl-2"
+        >
           Forget Password
         </button>
-        <button className="btn bg-primary hover:bg-darkPri font-semibold text-base md:text-lg ">
-          Login
-        </button>
-        <p className="text-sm font-medium text-right">
+        <div data-aos="zoom-in-down" data-aos-duration="1800">
+          <button className="py-1.5 md:py-2 px-2 md:px-3 rounded-md bg-primary hover:bg-darkPri font-semibold text-sm md:text-base lg:text-lg w-full">
+            Login
+          </button>
+        </div>
+
+        <p
+          className="text-sm font-medium text-right"
+          data-aos="zoom-in-down"
+          data-aos-duration="1800"
+        >
           Don`t have an account ?
           <Link to="/signUp" className="text-darkPri font-bold underline pl-2">
             Sign Up
           </Link>
         </p>
-
-        <button
-          onClick={signUpWithGoogle}
-          className="btn bg-base-300 hover:bg-primary text-black"
-        >
-          <FaGoogle />
-          Continue with google
-        </button>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
+          <button
+            onClick={signUpWithGoogle}
+            className="btn bg-base-300 hover:bg-primary text-black w-full text-sm md:text-base"
+          >
+            <FaGoogle />
+            Continue with google
+          </button>
+        </div>
       </form>
     </div>
   );

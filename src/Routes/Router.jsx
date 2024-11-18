@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
+import AdventurePlace from "../components/AdventurePlace";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <h1>about page</h1>,
+      },
+      {
+        path: "/adventure",
+        element: <AdventurePlace />,
+        loader: () => fetch("adventure.json"),
       },
       {
         path: "*",

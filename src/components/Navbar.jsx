@@ -1,10 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 import { HiOutlineLogin } from "react-icons/hi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { signOut } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import Aos from "aos";
+import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = () => {
   const [profileDe, setProfileDe] = useState(false);
@@ -15,27 +17,63 @@ const Navbar = () => {
     setProfileDe(!profileDe);
   };
   const handleLogOut = () => signOut(auth).then().catch();
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div>
-      <nav className="flex flex-row justify-between items-center my-4 w-11/12 mx-auto">
-        <div>
-          <h3 className="font-playFair text-xl md:text-2xl lg:text-3xl font-semibold">
+      <nav className="flex flex-row justify-between items-center py-3 w-11/12 mx-auto">
+        <div className="flex flex-row items-center gap-2">
+          <div className="drawer md:hidden">
+            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer-4" className="drawer-button ">
+                <RiMenu2Fill />
+              </label>
+            </div>
+            <div className="drawer-side z-10">
+              <label
+                htmlFor="my-drawer-4"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu bg-base-300 *:bg-white space-y-2 *:text-sm md:*:text-base text-base-content min-h-full py-4 px-2 *:shadow-inner *:py-1.5 *:px-12 *:rounded-md">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/about">About</NavLink>
+              </ul>
+            </div>
+          </div>
+          <h3
+            className="font-playFair text-xl md:text-2xl lg:text-3xl font-semibold"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <Link to="/">EcoVent</Link>
           </h3>
         </div>
-        <div className="flex-row *:py-1.5 *:px-4 *:rounded-md hidden md:flex">
+        <div
+          className="flex-row *:py-1.5 *:px-4 *:rounded-md hidden md:flex"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
-        <div className="flex flex-row gap-2 items-center">
+        <div
+          className="flex flex-row gap-2 items-center"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           {user ? (
             <div className="relative">
               <button onClick={handleProfileDetailsShow}>
                 {user?.photoURL ? (
                   <img
-                    className="w-14 h-14 border-4 border-darkPri rounded-full object-cover bg-center bg-cover"
+                    className="md:w-14 md:h-14 w-10 h-10 border-4 border-darkPri rounded-full object-cover bg-center bg-cover"
                     src={user.photoURL}
                     alt=""
                   />
@@ -44,8 +82,8 @@ const Navbar = () => {
                 )}
               </button>
               {profileDe === true && (
-                <div className="absolute top-16 right-0 max-w-xs max-h-[300px] bg-base-200 rounded-lg shadow-xl border-2 border-darkPri">
-                  <ul className="*:py-2 *:px-3 *:rounded-lg p-2 space-y-1">
+                <div className="absolute top-14 md:top-16 right-0 max-w-xs max-h-[300px] bg-base-200 rounded-lg shadow-xl border-2 border-darkPri z-50">
+                  <ul className="md:*:py-2 *:py-1.5 *:text-sm md:*:text-base md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1">
                     <li className="text-sm md:text-base shadow-inner">
                       {user.email}
                     </li>
@@ -65,10 +103,10 @@ const Navbar = () => {
           ) : (
             <button
               onClick={() => navigate("/login")}
-              className="bg-primary hover:bg-darkPri py-2 px-4 rounded-lg flex flex-row gap-2 justify-center items-center font-medium"
+              className="bg-primary hover:bg-darkPri md:py-2 md:px-4 py-1.5 px-3 text-sm md:text-base rounded-lg flex flex-row gap-2 justify-center items-center font-medium"
             >
               Login
-              <HiOutlineLogin className="text-xl" />
+              <HiOutlineLogin className="md:text-xl text-lg" />
             </button>
           )}
         </div>

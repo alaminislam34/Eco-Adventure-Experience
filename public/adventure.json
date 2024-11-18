@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "adventureTitle": "Rainforest Canopy Walk",
+    "image": "rainforest_canopy.jpg",
+    "categoryName": "Nature Walks",
+    "shortDescription": "Explore the stunning rainforest canopy from above.",
+    "adventureCost": 150,
+    "bookingAvailability": true,
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "4 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Guided tour", "Safety gear", "Bottled water"],
+    "ecoFriendlyFeatures": [
+      "Eco-certified guides",
+      "Minimal environmental impact",
+      "Reusable safety equipment"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Wear sturdy, closed-toe shoes",
+      "Bring a reusable water bottle",
+      "Apply eco-friendly sunscreen"
+    ]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Mangrove Kayaking Adventure",
+    "image": "mangrove_kayaking.jpg",
+    "categoryName": "Water Adventures",
+    "shortDescription": "Kayak through pristine mangroves and observe local wildlife.",
+    "adventureCost": 100,
+    "bookingAvailability": true,
+    "location": "Everglades, Florida, USA",
+    "duration": "3 hours",
+    "adventureLevel": "Easy",
+    "includedItems": ["Kayak rental", "Life jacket", "Guide map"],
+    "ecoFriendlyFeatures": [
+      "Non-motorized transport",
+      "Locally sourced equipment",
+      "Wildlife preservation"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring a hat and sunglasses",
+      "Wear quick-dry clothing",
+      "Respect local wildlife"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Desert Stargazing Experience",
+    "image": "desert_stargazing.jpg",
+    "categoryName": "Night Adventures",
+    "shortDescription": "Experience the magic of the desert under a canopy of stars.",
+    "adventureCost": 80,
+    "bookingAvailability": true,
+    "location": "Sahara Desert, Morocco",
+    "duration": "2 hours",
+    "adventureLevel": "Easy",
+    "includedItems": ["Telescopes", "Local astronomer guide", "Hot beverages"],
+    "ecoFriendlyFeatures": [
+      "No light pollution",
+      "Solar-powered equipment",
+      "Local community involvement"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Dress warmly",
+      "Carry a flashlight with red light",
+      "Avoid using bright devices"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Coral Reef Snorkeling",
+    "image": "coral_reef_snorkeling.jpg",
+    "categoryName": "Water Adventures",
+    "shortDescription": "Snorkel among vibrant coral reefs teeming with marine life.",
+    "adventureCost": 120,
+    "bookingAvailability": true,
+    "location": "Great Barrier Reef, Australia",
+    "duration": "5 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Snorkeling gear",
+      "Eco-friendly sunscreen",
+      "Lunch on the boat"
+    ],
+    "ecoFriendlyFeatures": [
+      "Marine conservation support",
+      "Plastic-free excursions",
+      "Educating participants about coral preservation"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Do not touch coral or marine life",
+      "Wear biodegradable sunscreen",
+      "Listen to the guide for safety instructions"
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Mountain Biking Through the Rockies",
+    "image": "rockies_biking.jpg",
+    "categoryName": "Adventure Sports",
+    "shortDescription": "Ride through breathtaking mountain trails in the Rockies.",
+    "adventureCost": 200,
+    "bookingAvailability": true,
+    "location": "Rocky Mountains, Colorado, USA",
+    "duration": "6 hours",
+    "adventureLevel": "Advanced",
+    "includedItems": [
+      "Mountain bike rental",
+      "Safety gear",
+      "Snacks and water"
+    ],
+    "ecoFriendlyFeatures": [
+      "Trails maintained with minimal disruption to wildlife",
+      "Biodegradable trail markers",
+      "Support for reforestation projects"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Ensure physical fitness for advanced trails",
+      "Carry a reusable water bottle",
+      "Stick to designated trails to protect the environment"
+    ]
+  },
+  {
+    "id": 6,
+    "adventureTitle": "Arctic Ice Cave Expedition",
+    "image": "arctic_ice_cave.jpg",
+    "categoryName": "Extreme Adventures",
+    "shortDescription": "Explore the beauty of ice caves in the Arctic wilderness.",
+    "adventureCost": 300,
+    "bookingAvailability": false,
+    "location": "Svalbard, Norway",
+    "duration": "8 hours",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Expert guides", "Safety equipment", "Hot meals"],
+    "ecoFriendlyFeatures": [
+      "Carbon-neutral travel",
+      "Support for Arctic conservation",
+      "Eco-friendly exploration methods"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Wear insulated clothing",
+      "Carry a reusable hot beverage container",
+      "Avoid loud noises to protect wildlife"
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Jungle Survival Training",
+    "image": "jungle_survival.jpg",
+    "categoryName": "Skill Development",
+    "shortDescription": "Learn essential survival skills in a jungle environment.",
+    "adventureCost": 180,
+    "bookingAvailability": true,
+    "location": "Borneo, Malaysia",
+    "duration": "2 days",
+    "adventureLevel": "Challenging",
+    "includedItems": [
+      "Expert instructors",
+      "Basic survival kit",
+      "Camping gear"
+    ],
+    "ecoFriendlyFeatures": [
+      "Respect for local flora and fauna",
+      "Training on sustainable survival practices",
+      "Minimal waste production"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring lightweight clothing",
+      "Pack a waterproof bag",
+      "Be prepared for physical challenges"
+    ]
+  },
+  {
+    "id": 8,
+    "adventureTitle": "Eco Safari",
+    "image": "eco_safari.jpg",
+    "categoryName": "Wildlife Adventures",
+    "shortDescription": "Embark on an eco-friendly safari to spot diverse wildlife.",
+    "adventureCost": 250,
+    "bookingAvailability": true,
+    "location": "Serengeti National Park, Tanzania",
+    "duration": "7 hours",
+    "adventureLevel": "Easy",
+    "includedItems": ["Professional guide", "Binoculars", "Lunch"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered safari vehicles",
+      "Wildlife conservation support",
+      "No plastic policy"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Wear neutral-colored clothing",
+      "Do not feed animals",
+      "Stay within designated areas"
+    ]
+  },
+  {
+    "id": 9,
+    "adventureTitle": "Volcano Hike",
+    "image": "volcano_hike.jpg",
+    "categoryName": "Hiking Adventures",
+    "shortDescription": "Hike up an active volcano and enjoy breathtaking views.",
+    "adventureCost": 140,
+    "bookingAvailability": true,
+    "location": "Mount Bromo, Indonesia",
+    "duration": "5 hours",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Local guide", "Snacks", "Hiking sticks"],
+    "ecoFriendlyFeatures": [
+      "Community-led tours",
+      "Eco-friendly transportation to the site",
+      "No single-use plastics"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Wear a mask to protect against volcanic ash",
+      "Bring a headlamp for early morning hikes",
+      "Stick to marked trails"
+    ]
+  },
+  {
+    "id": 10,
+    "adventureTitle": "Forest Meditation Retreat",
+    "image": "forest_meditation.jpg",
+    "categoryName": "Wellness Adventures",
+    "shortDescription": "Reconnect with nature through guided meditation in the forest.",
+    "adventureCost": 100,
+    "bookingAvailability": true,
+    "location": "Black Forest, Germany",
+    "duration": "3 hours",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Meditation mats",
+      "Herbal teas",
+      "Guided relaxation session"
+    ],
+    "ecoFriendlyFeatures": [
+      "No artificial sounds or lighting",
+      "Forest conservation donations",
+      "Encourages mindfulness for nature preservation"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Wear comfortable clothing",
+      "Turn off all electronic devices",
+      "Arrive 15 minutes early for preparation"
+    ]
+  }
+]

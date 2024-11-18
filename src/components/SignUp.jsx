@@ -1,14 +1,17 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const SignUp = () => {
   const { show, setShow, setUser, setError, error, signUpWithGoogle } =
     useContext(ProviderContext);
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -18,6 +21,7 @@ const SignUp = () => {
     console.log(name, email, photoURL, password);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        navigate("/");
         setUser(result.user);
         updateProfile(auth.currentUser, {
           displayName: name,
@@ -30,63 +34,92 @@ const SignUp = () => {
         setError(error);
       });
   };
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="flex justify-center items-center max-w-md mx-auto h-full my-6">
       <form
+        data-aos="zoom-in-down"
+        data-aos-duration="800"
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 border shadow-2xl p-6 rounded-xl w-full"
+        className="flex flex-col gap-4 border shadow-2xl p-6 rounded-xl w-full  bg-white"
       >
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-2 text-center">
+        <h2
+          className="text-xl md:text-2xl lg:text-3xl font-bold my-2 text-center"
+          data-aos="zoom-in-down"
+          data-aos-duration="2000"
+        >
           Register Your Account
         </h2>
-        {error && (
+        {error ? (
           <p className="text-red-500 my-2 text-center text-sm">
             {error.message}
           </p>
+        ) : (
+          ""
         )}
         <input
+          data-aos="zoom-in-down"
+          data-aos-duration="1800"
           name="name"
-          className="input input-warning focus:outline-none border-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
           type="text"
           placeholder="Your name"
         />
         <input
+          data-aos="zoom-in-down"
+          data-aos-duration="1600"
           type="text"
           name="photoURL"
           placeholder="PhotoURL"
-          className="input input-warning focus:outline-none border-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
         />
         <input
+          data-aos="zoom-in-down"
+          data-aos-duration="1400"
           name="email"
-          className="input input-warning focus:outline-none border-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
           type="email"
           placeholder="Your email"
         />
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos="zoom-in-down"
+          data-aos-duration="1200"
+        >
           <input
             name="password"
-            className="input input-warning focus:outline-none border-base-300 w-full"
+            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
             type={show ? "text" : "password"}
             placeholder="Your password"
           />
           <button
             onClick={() => setShow(!show)}
             type="button"
-            className="absolute top-1/2 -translate-y-1/2 right-2"
+            className="absolute top-1/2 -translate-y-1/2 right-2 md:right-4"
           >
             {show ? <LiaEyeSolid /> : <LiaEyeSlashSolid />}
           </button>
         </div>
-        <button
-          type="submit"
-          className="btn bg-primary hover:bg-darkPri font-semibold text-base md:text-lg "
+        <div data-aos="zoom-in-down" data-aos-duration="1000">
+          <button
+            type="submit"
+            className="py-1.5 md:py-2 px-2 md:px-3 rounded-md bg-primary hover:bg-darkPri font-semibold text-sm md:text-base lg:text-lg w-full"
+          >
+            Create Account
+          </button>
+        </div>
+        <p
+          className="text-sm font-medium text-right"
+          data-aos="zoom-in-down"
+          data-aos-duration="800"
+          data-aos-delay="100"
         >
-          Login
-        </button>
-        <p className="text-sm font-medium text-right">
           Already have an account ?
           <Link to="/login" className="text-darkPri font-bold underline pl-2">
-            Create Account
+            Login
           </Link>
         </p>
         <button
