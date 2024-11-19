@@ -76,7 +76,7 @@ const Navbar = () => {
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          {user ? (
+          {user && user.photoURL ? (
             <div className="relative z-[1000]">
               <button onClick={handleProfileDetailsShow}>
                 {user?.photoURL ? (

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "https://www.frolicadventure.com/uploads/img/everest-base-camp-trek-acommodation.jpg",
+    "title": "Everest Base Camp Trek",
+    "ecoFriendlyFeatures": [
+      "Use of biodegradable supplies",
+      "Eco-friendly accommodations",
+      "Minimal waste policy"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/CP9D33Y/nazarizal.jpg",
+    "title": "Coral Diving Paradise",
+    "ecoFriendlyFeatures": [
+      "Reef-safe diving practices",
+      "Eco-friendly transportation",
+      "Support for marine conservation"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/2tVY8B0/Exploration.jpg",
+    "title": "Amazon Jungle Expedition",
+    "ecoFriendlyFeatures": [
+      "Low-impact camping",
+      "Preservation of natural habitats",
+      "Sustainable sourcing of supplies"
+    ]
+  }
+]

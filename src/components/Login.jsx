@@ -1,6 +1,6 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -8,7 +8,9 @@ import auth from "../firebase/firebase.config";
 import Aos from "aos";
 
 const Login = () => {
-  const { show, setShow, error, setUser, setError, signUpWithGoogle } =
+  const [error, setError] = useState(null);
+  const location = useLocation();
+  const { show, setShow, setUser, signUpWithGoogle } =
     useContext(ProviderContext);
   const navigate = useNavigate();
   const handleSignIn = (e) => {
@@ -18,7 +20,7 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         setError(error);

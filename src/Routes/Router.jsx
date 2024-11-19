@@ -8,6 +8,7 @@ import Details from "../pages/Details";
 import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
 import Place from "../components/Place";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -46,12 +47,20 @@ const router = createBrowserRouter([
 
       {
         path: "/details/:id",
-        element: <Details />,
+        element: (
+          <PrivateRoute>
+            <Details />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/adventure.json"),
       },
       {
         path: "/userProfile",
-        element: <UserProfile />,
+        element: (
+          <PrivateRoute>
+            <UserProfile />
+          </PrivateRoute>
+        ),
         children: [
           {
             path: "/userProfile/updateProfile",

@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Banner from "../components/Banner";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
     <div>
       <div>
-        <Banner />
+        <Slider />
       </div>
       <h2
         data-aos="zoom-in-up"

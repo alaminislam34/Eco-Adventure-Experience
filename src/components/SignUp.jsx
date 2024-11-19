@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,7 +9,8 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 
 const SignUp = () => {
-  const { show, setShow, setUser, setError, error, signUpWithGoogle } =
+  const [error, setError] = useState(null);
+  const { show, setShow, setUser, signUpWithGoogle } =
     useContext(ProviderContext);
   const navigate = useNavigate();
   const handleSubmit = (e) => {
