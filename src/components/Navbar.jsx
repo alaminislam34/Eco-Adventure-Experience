@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex flex-row justify-between items-center py-2 w-11/12 mx-auto">
+      <nav className="flex flex-row justify-between items-center py-4 w-11/12 mx-auto">
         <div className="flex flex-row items-center gap-2">
           <div className="drawer md:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -37,7 +37,6 @@ const Navbar = () => {
               data-aos="fade-down"
               data-aos-duration="1000"
             >
-              {/* Page content here */}
               <label htmlFor="my-drawer-4" className="drawer-button ">
                 <RiMenu2Fill />
               </label>
@@ -51,7 +50,7 @@ const Navbar = () => {
               <ul className="menu bg-base-300 *:bg-white space-y-2 *:text-sm md:*:text-base text-base-content min-h-full py-4 px-2 *:shadow-inner *:py-1.5 *:px-12 *:rounded-md">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/blog">Blog</NavLink>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/userProfile">Profile</NavLink>
               </ul>
             </div>
           </div>
@@ -70,7 +69,7 @@ const Navbar = () => {
         >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/userProfile">Profile</NavLink>
         </div>
         <div
           className="flex flex-row gap-2 items-center z-50"

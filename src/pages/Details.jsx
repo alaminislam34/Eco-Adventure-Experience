@@ -17,13 +17,13 @@ const Details = () => {
     return <Loader />;
   }
   return (
-    <section className="md:grid md:grid-cols-4 gap-4 ">
-      <div className="md:col-span-3 w-11/12 mx-auto my-6 md:my-8">
+    <section className="w-11/12 mx-auto">
+      <div className=" my-6 md:my-8">
         <div
           data-aos="zoom-in-up"
           data-aos-duration="1000"
           key={place.id}
-          className="p-4 grid grid-cols-1 gap-4 shadow-xl bg-white rounded-xl relative"
+          className=" p-4 grid grid-cols-1 gap-4 shadow-xl bg-white rounded-xl relative"
         >
           <div
             data-aos="zoom-in"
@@ -32,7 +32,7 @@ const Details = () => {
             data-aos-easing="ease-in-sine"
           >
             <img
-              className="aspect-video bg-cover bg-center object-cover bg-no-repeat rounded-lg"
+              className="aspect-video bg-cover bg-center object-cover bg-no-repeat rounded-lg w-full h-full"
               src={place.image}
               alt=""
             />
@@ -135,6 +135,7 @@ const Details = () => {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </section>
   );

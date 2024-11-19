@@ -28,7 +28,7 @@ const UpdateProfile = () => {
     <div className="my-6 ">
       <form
         onSubmit={handleUpdateProfile}
-        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 md:p-6 bg-primary *:py-1 md:*:py-2 *:text-xs md:*:text-sm lg:*:text-base *:px-2 md:*:px-4"
+        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 bg-primary *:py-1 md:*:py-2 *:text-xs md:*:text-sm lg:*:text-base *:px-2 md:*:px-4 rounded-xl shadow-2xl"
       >
         <h3 className="text-lg md:text-xl font-semibold text-center ">
           Update Your Profile
@@ -43,11 +43,10 @@ const UpdateProfile = () => {
         <button type="submit" className="btn w-full">
           Update
         </button>
-        <div className="flex flex-col gap-2 w-full">
-          <Link to="/userProfile" type="button" className="">
-            Close
-          </Link>
-        </div>
+
+        <Link to="/userProfile" type="button" className="text-right py-1 px-2">
+          Close
+        </Link>
       </form>
     </div>
   );

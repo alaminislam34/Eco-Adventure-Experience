@@ -4,10 +4,10 @@ import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import AdventurePlace from "../components/AdventurePlace";
 import Home from "../pages/Home";
-import Banner from "../components/Banner";
 import Details from "../pages/Details";
 import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
+import Place from "../components/Place";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +26,7 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <h1>Blog page</h1>,
       },
-      {
-        path: "/about",
-        element: <h1>about page</h1>,
-      },
+
       {
         path: "/adventure",
         element: <AdventurePlace />,
@@ -38,11 +35,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("/adventure.json"),
         children: [
           {
             path: "/",
-            element: <Banner />,
+            element: <Place />,
+            loader: () => fetch("/adventure.json"),
           },
         ],
       },
@@ -62,6 +59,7 @@ const router = createBrowserRouter([
           },
         ],
       },
+
       {
         path: "*",
         element: (
