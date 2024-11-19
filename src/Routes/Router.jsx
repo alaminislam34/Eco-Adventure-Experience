@@ -6,6 +6,8 @@ import AdventurePlace from "../components/AdventurePlace";
 import Home from "../pages/Home";
 import Banner from "../components/Banner";
 import Details from "../pages/Details";
+import UserProfile from "../components/UserProfile";
+import UpdateProfile from "../components/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -31,12 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/adventure",
         element: <AdventurePlace />,
-        loader: () => fetch("adventure.json"),
+        loader: () => fetch("/adventure.json"),
       },
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("adventure.json"),
+        loader: () => fetch("/adventure.json"),
         children: [
           {
             path: "/",
@@ -49,6 +51,16 @@ const router = createBrowserRouter([
         path: "/details/:id",
         element: <Details />,
         loader: () => fetch("/adventure.json"),
+      },
+      {
+        path: "/userProfile",
+        element: <UserProfile />,
+        children: [
+          {
+            path: "/userProfile/updateProfile",
+            element: <UpdateProfile />,
+          },
+        ],
       },
       {
         path: "*",

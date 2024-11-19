@@ -7,11 +7,14 @@ import Loader from "../components/Loader";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const allData = useLoaderData();
+
   const navigate = useNavigate();
   useEffect(() => {
-    setData(allData);
+    if (allData) {
+      setData(allData);
+    }
   }, [allData]);
 
   return (
@@ -33,9 +36,9 @@ const Home = () => {
           className="my-2 border-b-2 border-darkPri w-20 md:w-32 flex justify-center items-center text-center"
         ></div>
       </div>
-      {data ? (
+      {data && data.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4">
-          {data.map((place, i) => (
+          {data.slice(0, 6).map((place, i) => (
             <div
               data-aos="zoom-in-up"
               data-aos-duration="1000"

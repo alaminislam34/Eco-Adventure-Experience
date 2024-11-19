@@ -15,10 +15,12 @@ const Provider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   // const [loading, setLoading] = useState(true);
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false);
       // setLoading(false);
       return () => unSubscribe();
     });
@@ -43,6 +45,8 @@ const Provider = ({ children }) => {
     signUpWithGoogle,
     data,
     setData,
+    loading,
+    setLoading,
   };
   return (
     <ProviderContext.Provider value={info}>{children}</ProviderContext.Provider>

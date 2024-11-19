@@ -16,7 +16,10 @@ const Navbar = () => {
   const handleProfileDetailsShow = () => {
     setProfileDe(!profileDe);
   };
-  const handleLogOut = () => signOut(auth).then().catch();
+  const handleLogOut = () => {
+    signOut(auth).then().catch();
+    setProfileDe(false);
+  };
   useEffect(() => {
     Aos.init({
       once: true,
@@ -61,7 +64,7 @@ const Navbar = () => {
           </h3>
         </div>
         <div
-          className="flex-row *:py-1.5 *:px-4 *:rounded-md hidden md:flex"
+          className="flex-row *:py-1 *:px-4 *:rounded-t-md hidden md:flex"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
@@ -89,7 +92,7 @@ const Navbar = () => {
               </button>
               {profileDe === true && (
                 <div className="absolute top-14 md:top-16 right-0 w-44 md:w-60  max-h-[300px] rounded-lg shadow-xl bg-white border-2 border-darkPri z-[1000] ">
-                  <ul className="md:*:py-2 *:py-1.5 *:text-sm md:*:text-base md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1">
+                  <ul className="md:*:py-2 *:py-1.5 md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1">
                     <li
                       data-aos="zoom-in-up"
                       data-aos-duration="1000"
@@ -97,21 +100,25 @@ const Navbar = () => {
                     >
                       {user.displayName}
                     </li>
-                    <li
+
+                    <Link
+                      onClick={() => setProfileDe(false)}
                       data-aos="zoom-in-up"
                       data-aos-duration="1000"
-                      className="text-xs md:text-sm hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
+                      className="py-1.5 md:py-2 w-full inline-block text-xs md:text-sm hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
+                      to="/userProfile"
                     >
                       Profile
-                    </li>
-                    <li
+                    </Link>
+
+                    <Link
                       data-aos="zoom-in-up"
                       data-aos-duration="1000"
                       onClick={handleLogOut}
-                      className="text-xs md:text-sm hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
+                      className="text-xs md:text-sm w-full inline-block hover:bg-darkPri cursor-pointer shadow-inner bg-base-200"
                     >
                       Log out
-                    </li>
+                    </Link>
                   </ul>
                 </div>
               )}
