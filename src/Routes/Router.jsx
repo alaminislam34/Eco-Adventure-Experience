@@ -9,6 +9,7 @@ import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
 import Place from "../components/Place";
 import PrivateRoute from "./PrivateRoute";
+import Profile from "../components/Profile";
 
 const router = createBrowserRouter([
   {
@@ -55,20 +56,19 @@ const router = createBrowserRouter([
         loader: () => fetch("/adventure.json"),
       },
       {
-        path: "/userProfile",
-        element: (
-          <PrivateRoute>
-            <UserProfile />
-          </PrivateRoute>
-        ),
+        path: "/profile",
+        element: <Profile />,
         children: [
           {
-            path: "/userProfile/updateProfile",
+            path: "/profile",
+            element: <UserProfile />,
+          },
+          {
+            path: "/profile/updateProfile",
             element: <UpdateProfile />,
           },
         ],
       },
-
       {
         path: "*",
         element: (

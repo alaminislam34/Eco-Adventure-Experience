@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "./Loader";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const Slider = () => {
   const [slides, setSlides] = useState([]);
@@ -27,25 +27,19 @@ const Slider = () => {
               backgroundImage: `url(${slides[currentSlide].image})`,
             }}
           ></div>
-          <div>
+          {/* <div>
             <button>
               <FaChevronLeft />
             </button>
             <button>
               <FaChevronRight />
             </button>
-          </div>
+          </div> */}
           <div className="absolute md:top-1/3 top-16 md:left-10 left-6 text-white space-y-2">
-            <h1
-              className="text-2xl md:text-4xl lg:text-5xl font-bold "
-              style={{ textShadow: "2px 4px 10px rgba(0, 0, 0, 0.8)" }}
-            >
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-stroke">
               {slides[currentSlide].title}
             </h1>
-            <p
-              style={{ textShadow: "2px 4px 10px rgba(0, 0, 0, 0.8)" }}
-              className="text-sm md:text-base lg:text-lg mt-2"
-            >
+            <p className="text-sm md:text-base lg:text-lg mt-2 text-stroke ">
               {slides[currentSlide].ecoFriendlyFeatures.map((feature, i) => (
                 <p key={i}>{feature}</p>
               ))}
@@ -53,9 +47,9 @@ const Slider = () => {
 
             <Link
               to="/adventure"
-              className="py-1.5 md:py-2 px-3 md:px-4 bg-darkPri inline-block"
+              className="btn py-1.5 md:py-2 px-3 md:px-4 bg-primary hover:bg-darkPri"
             >
-              See More
+              Explore More
             </Link>
           </div>
 

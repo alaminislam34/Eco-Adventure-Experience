@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-stroke {
+    text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5), 2px 4px 6px rgb(0, 0, 0, 0.5);
+  }
+}
+
 a.active {
   background-color: #e0a800;
 }

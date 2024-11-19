@@ -17,7 +17,7 @@ const UpdateProfile = () => {
       photoURL: photoURL,
     })
       .then(() => {
-        navigate("/userProfile");
+        navigate("/profile");
         setLoading(false);
       })
       .catch((error) => {
@@ -25,28 +25,56 @@ const UpdateProfile = () => {
       });
   };
   return (
-    <div className="my-6 ">
+    <div className="my-6 flex justify-center items-center">
       <form
+        data-aos="zoom-in"
+        data-aos-duration="1000"
         onSubmit={handleUpdateProfile}
-        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 bg-primary *:py-1 md:*:py-2 *:text-xs md:*:text-sm lg:*:text-base *:px-2 md:*:px-4 rounded-xl shadow-2xl"
+        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 md:p-6 bg-white rounded-xl shadow-2xl space-y-3 md:space-y-4"
       >
-        <h3 className="text-lg md:text-xl font-semibold text-center ">
+        <h3
+          data-aos="zoom-out-down"
+          data-aos-duration="1300"
+          className="text-lg md:text-xl font-semibold text-center "
+        >
           Update Your Profile
         </h3>
-        <input type="text" name="name" placeholder="Your name" required />
-        <input
-          type="text"
-          name="photoURL"
-          placeholder="Your photoURL"
-          required
-        />
-        <button type="submit" className="btn w-full">
-          Update
-        </button>
+        <div data-aos="zoom-out-down" data-aos-duration="1300">
+          <input
+            className="w-full h-full py-1.5 md:py-2 px-3 md:px-4 rounded-lg border border-primary outline-darkPri"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div data-aos="zoom-out-down" data-aos-duration="1300">
+          <input
+            className="w-full h-full py-1.5 md:py-2 px-3 md:px-4 rounded-lg border border-primary outline-darkPri"
+            type="text"
+            name="photoURL"
+            placeholder="Your photoURL"
+            required
+          />
+        </div>
+        <div
+          data-aos="zoom-out-down"
+          data-aos-duration="1300"
+          className="w-full"
+        >
+          <button
+            type="submit"
+            className="btn h-full w-full bg-primary hover:bg-darkPri"
+          >
+            Update
+          </button>
+        </div>
 
-        <Link to="/userProfile" type="button" className="text-right py-1 px-2">
-          Close
-        </Link>
+        <div data-aos="zoom-out-down" data-aos-duration="1300">
+          <Link to="/profile" type="button" className="text-right py-1 px-2">
+            Profile
+          </Link>
+        </div>
       </form>
     </div>
   );
