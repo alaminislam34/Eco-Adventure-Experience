@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 
 const Details = () => {
   const allData = useLoaderData();
   const [place, setPlace] = useState(null);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const detail = allData.find((place) => place.id == id);
@@ -76,66 +77,115 @@ const Details = () => {
               {place.longDescription}
             </p>
 
-            <div className="grid md:grid-cols-2 grid-cols-1 items-center">
-              <div>
+            <div className="grid md:grid-cols-2 grid-cols-1 items-center ">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="1600"
+                className="md:border-r-2 md:border-gray-500"
+              >
                 <div
                   data-aos="zoom-in-left"
                   data-aos-duration="1600"
-                  className="flex flex-row gap-2 items-center"
+                  className="flex flex-row gap-2 items-center my-2"
                 >
-                  <MdOutlineAccessTimeFilled className="text-darkPri text-base md:text-xl" />
+                  <MdOutlineAccessTimeFilled className="text-darkPri text-sm md:text-base lg:text-xl" />
                   <p>{place.duration}</p>
                 </div>
+
                 <div
                   data-aos="zoom-in-left"
                   data-aos-duration="1500"
-                  className="flex flex-row gap-2 items-center"
+                  className="flex flex-row gap-2 items-center my-2"
                 >
-                  <FaLocationDot className="text-base md:text-xl font-bold text-darkPri" />
+                  <FaLocationDot className="text-sm md:text-base lg:text-xl font-bold text-darkPri" />
                   <p>{place.location}</p>
                 </div>
+                <p
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1700"
+                  className="text-lg md:text-xl font-bold my-2"
+                >
+                  <span className="italic text-darkPri">$ </span>
+                  {place.adventureCost}
+                </p>
               </div>
-              <div>
-                <p>Adventure Level: {place.adventureLevel}</p>
-                <p>Group size: {place.maxGroupSize} people</p>
+              <div
+                className="md:ml-6"
+                data-aos="zoom-in-left"
+                data-aos-duration="1700"
+              >
+                <p className="text-sm md:text-base lg:text-lg my-2">
+                  <span className="text-darkPri">➤</span>{" "}
+                  <span>Adventure Level </span>
+                  <span className="font-bold text-darkPri">
+                    {" "}
+                    {place.adventureLevel}
+                  </span>
+                </p>
+                <p className="text-sm md:text-base lg:text-lg my-2">
+                  <span className="text-darkPri">➤</span> Group size:{" "}
+                  <span className="font-semibold">{place.maxGroupSize}</span>{" "}
+                  people
+                </p>
               </div>
             </div>
 
-            <div>
-              <p
-                data-aos="zoom-in-left"
-                data-aos-duration="1700"
-                className="text-xl font-bold"
-              >
-                <span className="italic text-darkPri">$</span>
-                {place.adventureCost}
-              </p>
-            </div>
             <div className="grid md:grid-cols-2 grid-cols-1 items-center text-left">
-              <div>
-                <p className="text-lg md:text-xl font-semibold">
-                  Included Items:{" "}
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="1800"
+                className="md:border-r-2 md:border-gray-500"
+              >
+                <p className="text-base md:text-lg lg:text-xl font-semibold">
+                  Included Items:
                 </p>
                 {place.includedItems.map((item, i) => (
-                  <ol key={i} className="list-disc list-inside">
-                    <li>{item}</li>
+                  <ol key={i} className="*:text-sm md:*:text-base ">
+                    <li className="py-1">
+                      <span className="text-darkPri">✔</span> {item}
+                    </li>
                   </ol>
                 ))}
               </div>
-              <div>
-                <p className="text-lg md:text-xl font-semibold">
-                  Eco Friendly Features :{" "}
+              <div
+                className="md:ml-6"
+                data-aos="zoom-in-left"
+                data-aos-duration="1900"
+              >
+                <p className="text-base md:text-lg lg:text-xl font-semibold">
+                  Eco Friendly Features :
                 </p>
                 {place.ecoFriendlyFeatures.map((feature, i) => (
-                  <ul key={i} className="list-disc list-inside">
-                    <li>{feature}</li>
+                  <ul key={i} className="*:text-sm md:*:text-base ">
+                    <li className="py-1">
+                      <span className="text-darkPri">✔</span> {feature}
+                    </li>
+                  </ul>
+                ))}
+              </div>
+              <div data-aos="zoom-in-left" data-aos-duration="2000">
+                <p className="text-base md:text-lg lg:text-xl font-semibold py-2">
+                  Special Instructions:{" "}
+                </p>
+                {place.specialInstructions.map((ins, i) => (
+                  <ul key={i} className="*:text-sm md:*:text-base ">
+                    <li className="py-1">
+                      <span className="text-darkPri">✔</span> {ins}
+                    </li>
                   </ul>
                 ))}
               </div>
             </div>
+            <div className="text-left mt-6 flex justify-start items-center">
+              <button
+                onClick={() => navigate("/googleMeet")}
+                className="text-sm md:text-base lg:text-lg py-1.5 md:py-2 px-3 md:px-4 bg-darkPri"
+              >
+                Talk with Expert
+              </button>
+            </div>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
   );

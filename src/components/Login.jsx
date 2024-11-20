@@ -37,7 +37,7 @@ const Login = () => {
         data-aos="zoom-in"
         data-aos-duration="800"
         onSubmit={handleSignIn}
-        className="flex flex-col gap-4 border shadow-2xl p-6 rounded-xl w-full bg-white"
+        className="flex flex-col gap-4 border shadow-2xl p-6 m-4 rounded-xl w-full bg-white"
       >
         <h2
           data-aos="zoom-in-down"
@@ -94,7 +94,7 @@ const Login = () => {
         </div>
 
         <p
-          className="text-sm font-medium text-right"
+          className="text-xs md:text-sm lg:text-base font-medium text-right"
           data-aos="zoom-in-down"
           data-aos-duration="1800"
         >

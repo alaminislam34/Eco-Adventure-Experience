@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         playFair: ["Playfair Display", "serif"],
         poppins: ["Poppins", "sans-serif"],
+        merienda: ["Merienda", "cursive"],
       },
       colors: {
         primary: "#F2C94C",

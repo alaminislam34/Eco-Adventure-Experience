@@ -10,7 +10,7 @@ const Home = () => {
       <h2
         data-aos="zoom-in-up"
         data-aos-duration="1000"
-        className="text-xl md:text-2xl font-semibold text-center mt-4 md:mt-6"
+        className="text-xl md:text-2xl font-semibold text-center mt-4 md:mt-6 font-merienda"
       >
         Choose Your Trips
       </h2>

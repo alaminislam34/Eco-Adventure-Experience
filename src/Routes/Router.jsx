@@ -10,6 +10,7 @@ import UpdateProfile from "../components/UpdateProfile";
 import Place from "../components/Place";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../components/Profile";
+import GoogleMeet from "../pages/GoogleMeet";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "/blog",
+        path: "/about",
         element: <h1>Blog page</h1>,
       },
 
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
             element: <UpdateProfile />,
           },
         ],
+      },
+      {
+        path: "/googleMeet",
+        element: <GoogleMeet />,
       },
       {
         path: "*",

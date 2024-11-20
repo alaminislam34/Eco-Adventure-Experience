@@ -26,7 +26,7 @@ const Navbar = () => {
       once: true,
     });
     const handleSticky = () => {
-      if (window.scrollY > 30) {
+      if (window.scrollY > 100) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -41,9 +41,9 @@ const Navbar = () => {
       <div
         className={`${
           sticky
-            ? "fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl px-4 md:px-6 py-2 md:py-4"
+            ? "fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl px-4 md:px-6 py-2 md:py-4  duration-1000"
             : "static py-4"
-        } duration-1000 delay-75`}
+        }`}
       >
         <nav className="flex flex-row justify-between items-center">
           <div className="flex flex-row items-center gap-2">
@@ -70,17 +70,19 @@ const Navbar = () => {
                 ></label>
                 <ul className="menu bg-base-300 *:bg-white space-y-2 *:text-sm md:*:text-base text-base-content min-h-full py-4 px-2 *:shadow-inner *:py-1.5 *:px-12 *:rounded-md">
                   <NavLink to="/">Home</NavLink>
-                  <NavLink to="/blog">Blog</NavLink>
+                  <NavLink to="/about">About</NavLink>
                   {user && <NavLink to="/profile">Profile</NavLink>}
                 </ul>
               </div>
             </div>
             <h3
-              className="text-xl md:text-2xl lg:text-3xl font-semibold"
+              className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda"
               data-aos="fade-down"
               data-aos-duration="1000"
             >
-              <Link to="/">EcoVent</Link>
+              <Link to="/" className="">
+                EcoVent
+              </Link>
             </h3>
           </div>
           <div
@@ -89,7 +91,7 @@ const Navbar = () => {
             data-aos-duration="1000"
           >
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/about">About</NavLink>
             {user && <NavLink to="/profile">Profile</NavLink>}
           </div>
           <div
