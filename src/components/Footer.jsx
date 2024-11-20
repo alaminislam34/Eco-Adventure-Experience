@@ -1,11 +1,19 @@
 const Footer = () => {
   return (
     <footer className="footer footer-center gap-4 bg-[#333333] text-[#F5F5F5] p-6 md:p-10">
-      <h3 className="text-darkPri font-bold font-merienda my-4 md:my-6 text-xl md:text-2xl lg:text-3xl">
+      <h3
+        data-aos="zoom-out-up"
+        data-aos-duration="1000"
+        className="text-darkPri font-bold font-merienda my-4 md:my-6 text-xl md:text-2xl lg:text-3xl"
+      >
         Eco Adventure
       </h3>
       <nav className=" md:w-11/12 mx-auto flex flex-col md:flex-row justify-start md:justify-between items-start gap-6">
-        <ul className="flex flex-col text-left gap-2">
+        <ul
+          className="flex flex-col text-left gap-2"
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+        >
           <li className="text-base md:text-lg font-semibold">Services</li>
           <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Guided Nature Tours
@@ -25,7 +33,11 @@ const Footer = () => {
             Eco-Friendly Accommodation
           </li>
         </ul>
-        <ul className="flex flex-col gap-2 text-left">
+        <ul
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+          className="flex flex-col gap-2 text-left"
+        >
           <li className="text-base md:text-lg font-semibold">Quick Links</li>
           <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Home
@@ -37,7 +49,11 @@ const Footer = () => {
             Profile
           </li>
         </ul>
-        <ul className="flex flex-col gap-2 text-left">
+        <ul
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+          className="flex flex-col gap-2 text-left"
+        >
           <li className="text-base md:text-lg font-semibold">Contact Info</li>
           <p></p>
           <p>Street 238,52</p>

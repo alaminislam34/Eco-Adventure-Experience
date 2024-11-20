@@ -18,7 +18,11 @@ const About = () => {
 
   return (
     <div>
-      <div className="h-[40vh] w-full relative">
+      <div
+        data-aos="zoom-out-up"
+        data-aos-duration="1000"
+        className="h-[40vh] w-full relative"
+      >
         <img
           className="w-full h-full object-cover bg-center filter brightness-50"
           src={about}
@@ -30,15 +34,25 @@ const About = () => {
       </div>
       <div className="my-6 md:my-8 lg:my-12">
         <div className="flex justify-center items-center flex-col gap-2">
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda">
+          <h3
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda"
+          >
             Our Expert Guides Team
           </h3>
-          <div className="border-b-2 border-darkPri w-32 md:w-52 my-1"></div>
+          <div
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            className="border-b-2 border-darkPri w-32 md:w-52 my-1"
+          ></div>
         </div>
         <section className="flex justify-center items-center my-6 md:my-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 ">
             {guides.map((guide) => (
               <div
+                data-aos="zoom-out-up"
+                data-aos-duration="1000"
                 key={guide.id}
                 className="relative overflow-hidden group rounded-xl md:w-72 w-56 h-56 md:h-72 cursor-pointer group"
               >
@@ -65,12 +79,20 @@ const About = () => {
       </div>
       <section className="my-6 md:my-8 lg:my-12">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda my-4">
+          <h2
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda my-4"
+          >
             Gallery
           </h2>
-          <div className="border-b-2 border-darkPri w-24 md:w-32 mb-4"></div>
+          <div
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            className="border-b-2 border-darkPri w-24 md:w-32 mb-4"
+          ></div>
         </div>
-        <div>
+        <div data-aos="zoom-out-up" data-aos-duration="1000">
           <Gallery />
         </div>
       </section>

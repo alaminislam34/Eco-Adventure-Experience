@@ -38,9 +38,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="px-4 md:px-6 py-2">
+    <div className="px-4 md:px-6">
       <div>
-        <nav className="flex flex-row justify-between items-center">
+        <nav className="flex flex-row justify-between items-center md:my-6 my-4">
           <div className="flex flex-row items-center gap-2">
             <div className="drawer md:hidden">
               <input

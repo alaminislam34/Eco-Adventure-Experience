@@ -22,6 +22,8 @@ const Slider = () => {
       {slides && slides.length ? (
         <div className="relative w-full h-[85vh]">
           <div
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
             className="w-full h-full bg-cover bg-center"
             style={{
               backgroundImage: `url(${slides[currentSlide].image})`,
@@ -66,7 +68,11 @@ const Slider = () => {
             </p>
           </div>
 
-          <div className="absolute bottom-12 md:right-10 right-2 flex space-x-4">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            className="absolute bottom-12 md:right-10 right-2 flex space-x-4"
+          >
             {slides.map((slide, index) => (
               <img
                 key={slide.id}
