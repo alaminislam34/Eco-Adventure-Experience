@@ -7,6 +7,7 @@ import { signOut } from "firebase/auth";
 import auth from "../firebase/firebase.config";
 import Aos from "aos";
 import { RiMenu2Fill } from "react-icons/ri";
+import { IoIosArrowDropup } from "react-icons/io";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -38,13 +39,7 @@ const Navbar = () => {
 
   return (
     <div className="px-4 md:px-6 py-2">
-      <div
-        className={`${
-          sticky
-            ? "fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl px-4 md:px-6 py-2 md:py-4  duration-1000"
-            : "static py-4"
-        }`}
-      >
+      <div>
         <nav className="flex flex-row justify-between items-center">
           <div className="flex flex-row items-center gap-2">
             <div className="drawer md:hidden">
@@ -76,7 +71,7 @@ const Navbar = () => {
               </div>
             </div>
             <h3
-              className="text-xl md:text-2xl lg:text-3xl font-bold font-merienda"
+              className="text-xl md:text-2xl lg:text-3xl font-extrabold font-merienda"
               data-aos="fade-down"
               data-aos-duration="1000"
             >
@@ -158,6 +153,14 @@ const Navbar = () => {
             )}
           </div>
         </nav>
+      </div>
+      <div
+        onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+        className={`fixed bottom-5 right-4 z-40 ${
+          sticky ? "block" : "hidden"
+        } cursor-pointer`}
+      >
+        <IoIosArrowDropup className="md:text-5xl text-3xl bg-white/20 backdrop-blur-2xl text-darkPri rounded-full" />
       </div>
     </div>
   );

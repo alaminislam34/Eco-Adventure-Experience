@@ -11,6 +11,7 @@ import Place from "../components/Place";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../components/Profile";
 import GoogleMeet from "../pages/GoogleMeet";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <h1>Blog page</h1>,
+        element: <About />,
+        loader: () => fetch("/guides.json"),
       },
 
       {

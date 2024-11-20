@@ -21,9 +21,12 @@ const GoogleMeet = () => {
         </h1>
         <div>
           {join ? (
-            <button className="btn rounded-none bg-green-400 hover:bg-green-500">
+            <a
+              href="https://meet.google.com/landing"
+              className="btn rounded-none bg-green-400 hover:bg-green-500"
+            >
               Join Google Meet
-            </button>
+            </a>
           ) : (
             <div className="flex flex-col gap-2">
               <p className="text-red-500 font-semibold py-1 px-2">Notice:</p>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://st.depositphotos.com/1743476/1276/i/450/depositphotos_12765264-stock-photo-smiling-business-man.jpg",
+    "name": "MD Al Amin Islam",
+    "character": "Mountain Trekking Expert"
+  },
+  {
+    "id": 2,
+    "image": "https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg",
+    "name": "MD Rufayed",
+    "character": "Wildlife Conservation Specialist"
+  },
+  {
+    "id": 3,
+    "image": "https://images.squarespace-cdn.com/content/v1/55a94019e4b0dad7bd1c05d1/1567535614534-UI36HZH6YYOAXWEU732S/Print-%281%29-min.jpg?format=1000w",
+    "name": "MD Riyadun Nabi",
+    "character": "Scuba Diving Instructor"
+  },
+  {
+    "id": 4,
+    "image": "https://images.squarespace-cdn.com/content/v1/5ec689480cc22c2d441e152f/4abb45fb-e456-4079-8076-b40ac0a89dfc/nlalor-photography-2021-06-17-Jason-Cholewa-Headshot-Web-Sized-1.jpg",
+    "name": "MD Adnan",
+    "character": "Mountain Biking Guide"
+  },
+  {
+    "id": 5,
+    "image": "https://images.squarespace-cdn.com/content/v1/572e050c4d088ea3a8f0ac9d/1652567773148-V0S2AG6YR65EVB0T522U/Thomas_Alston-2144-PRINT.jpg?format=1000w",
+    "name": "MD Gias Uddin",
+    "character": "Cultural Tour Expert"
+  },
+  {
+    "id": 6,
+    "image": "https://images.squarespace-cdn.com/content/v1/5cfb0f8783523500013c5639/6051988f-d8b6-41e3-bf5e-14d620fc73a1/Professional-Headshot-Vancouver",
+    "name": "MD Fahat",
+    "character": "Safari Tour Guide"
+  }
+]
