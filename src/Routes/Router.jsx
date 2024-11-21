@@ -10,17 +10,37 @@ import UpdateProfile from "../components/UpdateProfile";
 import Place from "../components/Place";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../components/Profile";
-import GoogleMeet from "../pages/GoogleMeet";
 import About from "../pages/About";
 import Blog from "../components/Blog";
 import LoginPage from "../pages/LoginPage";
 import ForgetPassword from "../components/ForgetPassword";
+import MeetGoogle from "../components/MeetGoogle";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+        children: [
+          {
+            path: "/",
+            element: <Place />,
+            loader: () => fetch("/adventure.json"),
+          },
+        ],
+      },
+      {
+        path: "/about",
+        element: <About />,
+        loader: () => fetch("/guides.json"),
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
       {
         path: "/loginPage",
         element: <LoginPage />,
@@ -39,30 +59,11 @@ const router = createBrowserRouter([
         path: "/signUp",
         element: <SignUp />,
       },
-      {
-        path: "/about",
-        element: <About />,
-        loader: () => fetch("/guides.json"),
-      },
-      {
-        path: "/blog",
-        element: <Blog />,
-      },
+
       {
         path: "/adventure",
         element: <AdventurePlace />,
         loader: () => fetch("/adventure.json"),
-      },
-      {
-        path: "/",
-        element: <Home />,
-        children: [
-          {
-            path: "/",
-            element: <Place />,
-            loader: () => fetch("/adventure.json"),
-          },
-        ],
       },
 
       {
@@ -89,8 +90,8 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/googleMeet",
-        element: <GoogleMeet />,
+        path: "/meetGoogle",
+        element: <MeetGoogle />,
       },
       {
         path: "*",

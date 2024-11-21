@@ -24,7 +24,7 @@ const Details = () => {
           data-aos="zoom-in-up"
           data-aos-duration="1000"
           key={place.id}
-          className=" p-4 grid grid-cols-1 gap-4 shadow-xl bg-white rounded-xl relative"
+          className=" p-4 grid grid-cols-1 gap-4 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300 rounded-xl relative"
         >
           <div
             data-aos="zoom-in"
@@ -178,7 +178,7 @@ const Details = () => {
             </div>
             <div className="text-left mt-6 flex justify-start items-center">
               <button
-                onClick={() => navigate("/googleMeet")}
+                onClick={() => navigate("/meetGoogle")}
                 className="text-sm md:text-base lg:text-lg py-1.5 md:py-2 px-3 md:px-4 bg-darkPri"
               >
                 Talk with Expert

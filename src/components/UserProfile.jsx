@@ -18,7 +18,7 @@ const UserProfile = () => {
         <div
           data-aos="zoom-out"
           data-aos-duration="1000"
-          className="flex flex-col justify-center items-center space-y-2 md:space-y-3 bg-white shadow-2xl py-6 px-8 rounded-lg"
+          className="flex flex-col justify-center items-center space-y-2 md:space-y-3 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300 py-6 px-8 rounded-lg"
         >
           <img
             data-aos="zoom-out-down"

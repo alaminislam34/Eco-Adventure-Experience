@@ -43,7 +43,7 @@ const Navbar = () => {
       case "/profile/updateProfile":
         document.title = "EcoVent || Update Profile";
         break;
-      case "/googleMeet":
+      case "/meetGoogle":
         document.title = "EcoVent || Meet";
         break;
       case `/details/${Id}`:
@@ -164,7 +164,7 @@ const Navbar = () => {
                   )}
                 </button>
                 {profileDe === true && (
-                  <div className="absolute top-14 md:top-16 right-0 w-44 md:w-60  max-h-[300px] rounded-lg shadow-xl bg-white border-2 border-darkPri z-[1000] ">
+                  <div className="absolute top-14 md:top-16 right-0 w-44 md:w-60  max-h-[300px] rounded-lg shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300 border-2 border-white z-[1000] ">
                     <ul className="md:*:py-2 *:py-1.5 md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1 text-center">
                       <li
                         data-aos="zoom-in-up"

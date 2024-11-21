@@ -85,7 +85,7 @@ const SignUp = () => {
         data-aos="zoom-out-down"
         data-aos-duration="800"
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 border shadow-2xl py-6 px-8 rounded-xl w-full m-4 bg-white"
+        className="flex flex-col gap-4 border py-6 px-8 rounded-xl w-full m-4 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300"
       >
         <h2
           className="text-xl md:text-2xl lg:text-3xl font-bold my-2 text-center"
@@ -105,7 +105,7 @@ const SignUp = () => {
           data-aos="zoom-out-down"
           data-aos-duration="1800"
           name="name"
-          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full"
           type="text"
           placeholder="Your name"
           required
@@ -116,14 +116,14 @@ const SignUp = () => {
           type="text"
           name="photoURL"
           placeholder="PhotoURL"
-          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full"
           required
         />
         <input
           data-aos="zoom-out-down"
           data-aos-duration="1400"
           name="email"
-          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full"
           type="email"
           placeholder="Your email"
           required
@@ -135,7 +135,7 @@ const SignUp = () => {
         >
           <input
             name="password"
-            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
+            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full"
             type={show ? "text" : "password"}
             placeholder="Your password"
             value={password}

@@ -52,7 +52,7 @@ const Login = () => {
         data-aos="zoom-in"
         data-aos-duration="800"
         onSubmit={handleSignIn}
-        className="flex flex-col gap-4 border shadow-2xl p-6 m-4 rounded-xl w-full bg-white"
+        className="flex flex-col gap-4 border p-6 m-4 rounded-xl w-full shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300"
       >
         <h2
           data-aos="zoom-in-down"
@@ -72,7 +72,7 @@ const Login = () => {
           data-aos="zoom-in-down"
           data-aos-duration="1000"
           name="email"
-          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 bg-base-300"
+          className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300"
           type="email"
           placeholder="Your email"
         />
@@ -83,7 +83,7 @@ const Login = () => {
         >
           <input
             name="password"
-            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full bg-base-300"
+            className="py-1.5 md:py-2 px-2 md:px-3 text-sm md:text-base rounded-md focus:outline-primary focus:outline-none border-base-300 w-full"
             type={show ? "text" : "password"}
             placeholder="Your password"
           />

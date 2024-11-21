@@ -24,20 +24,12 @@ const Slider = () => {
           <div
             data-aos="zoom-out-up"
             data-aos-duration="1000"
-            className="w-full h-full bg-cover bg-center"
+            className="w-full h-full bg-cover bg-center filter brightness-75"
             style={{
               backgroundImage: `url(${slides[currentSlide].image})`,
             }}
           ></div>
-          {/* <div>
-            <button>
-              <FaChevronLeft />
-            </button>
-            <button>
-              <FaChevronRight />
-            </button>
-          </div> */}
-          <div className="absolute md:top-1/3 top-16 md:left-10 left-6 text-white space-y-2">
+          <div className="absolute md:top-1/3 top-16 md:left-10 left-6 text-white space-y-2 bg-transparent">
             <h1
               data-aos="zoom-out-up"
               data-aos-duration="1000"

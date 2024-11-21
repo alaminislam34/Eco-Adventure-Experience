@@ -30,7 +30,11 @@ footer li {
 .background {
   position: fixed;
   display: block;
-  background: linear-gradient(to bottom, #d8ecf3, #f9f9f9, #b0c4de);
+  /* background: linear-gradient(to bottom, #d8ecf3, #f9f9f9, #b0c4de); */
+  /* background: linear-gradient(to bottom, #d7e1ec, #ffffff, #cfd9df); */
+  background: linear-gradient(to bottom, #b2fefa, #0ed2f7, #2193b0);
+  /* background: linear-gradient(to bottom, #d4fcf6, #c2e9fb, #a1c4fd); */
+  /* background: linear-gradient(to bottom, #eef2f3, #d9e7eb, #c9d6df); */
   top: 0;
   left: 0;
   z-index: 0;

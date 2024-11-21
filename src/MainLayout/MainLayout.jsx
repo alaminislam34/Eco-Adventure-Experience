@@ -8,6 +8,15 @@ const MainLayout = () => {
   useEffect(() => {
     Particles.init({
       selector: ".background",
+      maxParticles: 150,
+      color: ["#fefefe"],
+      speed: 0.2,
+      connectParticles: true,
+      sizeVariations: 3,
+      mouse: {
+        enable: true,
+        distance: 100,
+      },
     });
   }, []);
   return (

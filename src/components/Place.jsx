@@ -19,13 +19,13 @@ const Place = () => {
   return (
     <div>
       {data && data.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4">
+        <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 m-4">
           {data.slice(0, 6).map((place, i) => (
             <div
               data-aos="zoom-in-up"
               data-aos-duration="1000"
               key={i}
-              className="p-2 grid grid-cols-1 shadow-xl bg-white rounded-xl"
+              className="p-2 grid grid-cols-1 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300 backdrop-blur-sm rounded-xl"
             >
               <div
                 data-aos="zoom-in"

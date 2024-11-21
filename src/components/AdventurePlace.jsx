@@ -31,7 +31,7 @@ const AdventurePlace = () => {
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             key={i}
-            className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4 shadow-xl bg-white rounded-xl"
+            className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-r from-[#F8F8FF] to-blue-300 rounded-xl"
           >
             <div
               data-aos="zoom-in"
@@ -89,7 +89,7 @@ const AdventurePlace = () => {
                 <Link
                   to={`/details/${place.id}`}
                   onClick={() => handleDetailsId(place.id)}
-                  className="py-1.5 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri btn rounded-md group"
+                  className="py-1 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri rounded-md group"
                 >
                   <span className=" flex flex-row gap-1 items-center justify-center group-hover:scale-95 duration-300">
                     View More <HiOutlineExternalLink />

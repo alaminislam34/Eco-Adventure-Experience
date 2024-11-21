@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer footer-center gap-4 bg-[#333333] text-[#F5F5F5] p-6 md:p-10 z-10 relative">
+    <footer className="footer footer-center gap-4 bg-black/50 text-[#F5F5F5] p-6 z-10 relative">
       <h3
         data-aos="zoom-out-up"
         data-aos-duration="1000"
@@ -9,46 +9,46 @@ const Footer = () => {
         Eco Adventure
       </h3>
       <nav className="FooterText md:w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-start md:justify-between items-start gap-6">
-        <ul
+        <div
           className="flex flex-col text-left gap-2 justify-start w-full"
           data-aos="zoom-out-up"
           data-aos-duration="1000"
         >
-          <li className="text-base md:text-lg font-semibold">Services</li>
-          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          <h4 className="text-base md:text-lg font-semibold">Services</h4>
+          <a className="hover:underline hover:text-[#FFEB3B] text-xs md:text-sm lg:text-base cursor-pointer">
             Guided Nature Tours
-          </p>
-          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] text-xs md:text-sm lg:text-base cursor-pointer">
             {" "}
             Adventure Trekking & Camping
-          </p>
-          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] text-xs md:text-sm lg:text-base cursor-pointer">
             {" "}
             Wildlife Safaris
-          </p>
-          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] text-xs md:text-sm lg:text-base cursor-pointer">
             Kayaking & River Adventures
-          </p>
-          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] text-xs md:text-sm lg:text-base cursor-pointer">
             Eco-Friendly Accommodation
-          </p>
-        </ul>
-        <ul
+          </a>
+        </div>
+        <div
           data-aos="zoom-out-up"
           data-aos-duration="1000"
           className="flex flex-col gap-2 text-left w-full"
         >
-          <li className="text-base md:text-lg font-semibold">Quick Links</li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          <h4 className="text-base md:text-lg font-semibold">Quick Links</h4>
+          <a className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Home
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             About
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </a>
+          <a className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Profile
-          </li>
-        </ul>
+          </a>
+        </div>
         <ul
           data-aos="zoom-out-up"
           data-aos-duration="1000"

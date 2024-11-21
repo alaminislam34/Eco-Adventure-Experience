@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className="Blog bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8] overflow-hidden">
+    <div className="Blog bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8] overflow-hidden mb-8 md:mb-12">
       <div
         className="w-full h-[50vh] justify-center items-center bg-blog bg-center"
         data-aos="zoom-in"

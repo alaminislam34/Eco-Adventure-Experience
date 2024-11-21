@@ -30,7 +30,7 @@ const UpdateProfile = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
         onSubmit={handleUpdateProfile}
-        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 md:p-6 bg-white rounded-xl shadow-2xl space-y-3 md:space-y-4"
+        className="max-w-xs flex flex-col justify-center items-center gap-2 p-4 md:p-6 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-b from-[#F8F8FF] to-blue-300 rounded-lg shadow-2xl space-y-3 md:space-y-4"
       >
         <h3
           data-aos="zoom-out-down"
