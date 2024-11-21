@@ -114,7 +114,7 @@ const Navbar = () => {
             <h3
               className="text-xl md:text-2xl lg:text-3xl font-extrabold font-merienda"
               data-aos="fade-down"
-              data-aos-duration="1000"
+              data-aos-duration="1100"
             >
               <Link to="/" className="">
                 EcoVent
@@ -124,7 +124,7 @@ const Navbar = () => {
           <div
             className="flex-row gap-4 *:py-1 *:px-4 *:rounded-md hidden md:flex"
             data-aos="fade-down"
-            data-aos-duration="1000"
+            data-aos-duration="1300"
           >
             <NavLink className="hover:bg-primary duration-300" to="/">
               Home
@@ -144,7 +144,7 @@ const Navbar = () => {
           <div
             className="flex flex-row gap-2 items-center z-50"
             data-aos="fade-down"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           >
             {user && user.photoURL ? (
               <div className="relative z-[1000] ">

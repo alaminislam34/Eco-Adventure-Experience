@@ -23,7 +23,7 @@ const Slider = () => {
         <div className="relative w-full h-[85vh]">
           <div
             data-aos="zoom-out-up"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             className="w-full h-full bg-cover bg-center filter brightness-75"
             style={{
               backgroundImage: `url(${slides[currentSlide].image})`,
@@ -32,14 +32,14 @@ const Slider = () => {
           <div className="absolute md:top-1/3 top-16 md:left-10 left-6 text-white space-y-2 bg-transparent">
             <h1
               data-aos="zoom-out-up"
-              data-aos-duration="1000"
+              data-aos-duration="1600"
               className="text-2xl md:text-4xl lg:text-5xl font-bold text-stroke font-merienda"
             >
               {slides[currentSlide].title}
             </h1>
             <p
               data-aos="zoom-out-up"
-              data-aos-duration="1100"
+              data-aos-duration="1600"
               className="text-sm md:text-base lg:text-lg mt-2 text-stroke "
             >
               {slides[currentSlide].ecoFriendlyFeatures.map((feature, i) => (
@@ -50,19 +50,19 @@ const Slider = () => {
               ))}
             </p>
 
-            <p data-aos="zoom-out-up" data-aos-duration="1200">
+            <p data-aos="zoom-out-up" data-aos-duration="1800">
               <Link
                 to="/adventure"
-                className="btn py-1.5 md:py-2 px-3 md:px-4 bg-primary hover:bg-darkPri"
+                className="btn py-1.5 md:py-2 px-3 md:px-4 bg-primary hover:bg-darkPri mt-2"
               >
-                Explore More
+                Explore Now
               </Link>
             </p>
           </div>
 
           <div
             data-aos="zoom-out-up"
-            data-aos-duration="1000"
+            data-aos-duration="1800"
             className="absolute bottom-12 md:right-10 right-2 flex space-x-4"
           >
             {slides.map((slide, index) => (

@@ -20,15 +20,14 @@ const About = () => {
     <div>
       <div
         data-aos="zoom-out-up"
-        data-aos-duration="1000"
-        className="h-[40vh] w-full relative"
+        data-aos-duration="1400"
+        className="h-[40vh] w-full relative bg-aboutBg filter brightness-75 flex justify-center items-center"
       >
-        <img
-          className="w-full h-full object-cover bg-center filter brightness-75"
-          src={about}
-          alt=""
-        />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-stroke font-merienda text-2xl md:text-3xl lg:text-5xl">
+        <h1
+          data-aos="zoom-out-up"
+          data-aos-duration="1800"
+          className=" text-white filter brightness-105 font-bold text-stroke font-merienda text-2xl md:text-3xl lg:text-5xl"
+        >
           About
         </h1>
       </div>
@@ -57,7 +56,7 @@ const About = () => {
                 className="relative overflow-hidden group rounded-xl md:w-72 w-56 h-56 md:h-72 cursor-pointer group"
               >
                 <img
-                  className="w-full h-full object-cover bg-top"
+                  className="w-full h-full bg-cover object-top object-cover"
                   src={guide.image}
                   alt=""
                 />
@@ -65,7 +64,7 @@ const About = () => {
                 <div
                   className={`bg-primary absolute -bottom-24 group-hover:bottom-0 duration-1000 left-0 w-full p-2 backdrop-blur-xl`}
                 >
-                  <h4 className="text-lg md:text-xl font-medium">
+                  <h4 className="text-base md:text-lg font-medium">
                     {guide.name}
                   </h4>
                   <p className="text-xs md:text-sm text-black/80">

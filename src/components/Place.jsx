@@ -29,7 +29,7 @@ const Place = () => {
             >
               <div
                 data-aos="zoom-in"
-                data-aos-duration="1100"
+                data-aos-duration="1400"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
@@ -68,7 +68,7 @@ const Place = () => {
                 <div
                   data-aos="zoom-in-up"
                   data-aos-duration="1600"
-                  className="flex justify-between items-center"
+                  className="grid grid-cols-1 md:grid-cols-2 items-center"
                 >
                   <div className="flex flex-row gap-2 items-center">
                     <MdOutlineAccessTimeFilled className="text-darkPri text-base md:text-xl" />
@@ -83,7 +83,7 @@ const Place = () => {
                   <Link
                     to={`/details/${place.id}`}
                     onClick={() => handleDetailsId(place.id)}
-                    className="py-1.5 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri btn rounded-md group"
+                    className="py-1.5 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri btn rounded-md group mt-2"
                   >
                     <span className=" flex flex-row gap-1 items-center justify-center group-hover:scale-95 duration-300">
                       View More <HiOutlineExternalLink />

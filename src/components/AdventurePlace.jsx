@@ -25,7 +25,7 @@ const AdventurePlace = () => {
           className="my-2 border-b-2 border-darkPri w-20 md:w-32 flex justify-center items-center text-center"
         ></div>
       </div>
-      <div className="flex justify-center items-center flex-col gap-4">
+      <div className="flex justify-center items-center flex-col gap-6 md:gap-8">
         {adventure.map((place, i) => (
           <div
             data-aos="zoom-in-up"
@@ -34,8 +34,8 @@ const AdventurePlace = () => {
             className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4 shadow-[_0px_4px_10px_rgba(0, 0, 0, 0.5)] bg-gradient-to-r from-[#F8F8FF] to-blue-300 rounded-xl"
           >
             <div
-              data-aos="zoom-in"
-              data-aos-duration="1100"
+              data-aos="zoom-in-right"
+              data-aos-duration="1500"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
@@ -74,7 +74,7 @@ const AdventurePlace = () => {
               <div
                 data-aos="zoom-in-up"
                 data-aos-duration="1600"
-                className="flex justify-between items-center"
+                className="grid grid-cols-1 md:grid-cols-2 items-center"
               >
                 <div className="flex flex-row gap-2 items-center">
                   <MdOutlineAccessTimeFilled className="text-darkPri text-base md:text-xl" />
@@ -89,7 +89,7 @@ const AdventurePlace = () => {
                 <Link
                   to={`/details/${place.id}`}
                   onClick={() => handleDetailsId(place.id)}
-                  className="py-1 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri rounded-md group"
+                  className="py-1 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri btn rounded-md group mt-2"
                 >
                   <span className=" flex flex-row gap-1 items-center justify-center group-hover:scale-95 duration-300">
                     View More <HiOutlineExternalLink />

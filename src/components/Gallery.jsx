@@ -30,7 +30,6 @@ export default function App() {
           depth: 100,
           modifier: 1,
         }}
-        pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper h-[50vh] lg:h-[70vh] md:w-[80vw] w-full"
       >

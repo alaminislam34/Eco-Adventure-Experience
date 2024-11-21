@@ -21,12 +21,14 @@ const MeetGoogle = () => {
         </h1>
         <div>
           {join ? (
-            <a
-              href="https://meet.google.com/landing"
-              className="btn rounded-none bg-green-400 hover:bg-green-500"
-            >
-              Join Google Meet
-            </a>
+            <div className="">
+              <a
+                href="https://meet.google.com/landing"
+                className="btn rounded-none bg-primary hover:bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090] group"
+              >
+                <span className="group-hover:scale-95 ">Join Google Meet</span>
+              </a>
+            </div>
           ) : (
             <div className="flex flex-col gap-2">
               <p className="text-red-500 font-semibold py-1 px-2">Notice:</p>
