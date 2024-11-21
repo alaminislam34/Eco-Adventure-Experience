@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "cors": "^2.8.5",
     "firebase": "^11.0.2",
+    "gsap": "^3.12.5",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
     "moment": "^2.30.1",

@@ -1,10 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import {
-  GoogleAuthProvider,
-  onAuthStateChanged,
-  signInWithPopup,
-} from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 
@@ -16,25 +12,14 @@ const Provider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const [loading, setLoading] = useState(true);
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
-      // setLoading(false);
       return () => unSubscribe();
     });
   }, []);
-  const googleProvider = new GoogleAuthProvider();
-  const signUpWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .catch((error) => {
-        setError(error);
-      });
-  };
+
   const info = {
     setShow,
     show,
@@ -42,7 +27,6 @@ const Provider = ({ children }) => {
     setUser,
     error,
     setError,
-    signUpWithGoogle,
     data,
     setData,
     loading,

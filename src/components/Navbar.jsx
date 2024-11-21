@@ -66,6 +66,7 @@ const Navbar = () => {
                 <ul className="menu bg-base-300 *:bg-white space-y-2 *:text-sm md:*:text-base text-base-content min-h-full py-4 px-2 *:shadow-inner *:py-1.5 *:px-12 *:rounded-md">
                   <NavLink to="/">Home</NavLink>
                   <NavLink to="/about">About</NavLink>
+                  <NavLink to="/blog">Blog</NavLink>
                   {user && <NavLink to="/profile">Profile</NavLink>}
                 </ul>
               </div>
@@ -87,6 +88,7 @@ const Navbar = () => {
           >
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
             {user && <NavLink to="/profile">Profile</NavLink>}
           </div>
           <div
@@ -95,11 +97,15 @@ const Navbar = () => {
             data-aos-duration="1000"
           >
             {user && user.photoURL ? (
-              <div className="relative z-[1000]">
-                <button onClick={handleProfileDetailsShow}>
+              <div className="relative z-[1000] ">
+                <button
+                  onClick={handleProfileDetailsShow}
+                  className="tooltip tooltip-bottom hover:tooltip-open"
+                  data-tip={user.displayName}
+                >
                   {user?.photoURL ? (
                     <img
-                      className="md:w-14 md:h-14 w-10 h-10 border-4 border-darkPri rounded-full object-cover bg-center bg-cover"
+                      className="md:w-14 md:h-14 w-10 h-10 border-4 border-darkPri rounded-full object-cover bg-center bg-cover "
                       src={user.photoURL}
                       alt=""
                     />
@@ -109,7 +115,7 @@ const Navbar = () => {
                 </button>
                 {profileDe === true && (
                   <div className="absolute top-14 md:top-16 right-0 w-44 md:w-60  max-h-[300px] rounded-lg shadow-xl bg-white border-2 border-darkPri z-[1000] ">
-                    <ul className="md:*:py-2 *:py-1.5 md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1">
+                    <ul className="md:*:py-2 *:py-1.5 md:*:px-3 *:px-2 *:rounded-lg p-2 space-y-1 text-center">
                       <li
                         data-aos="zoom-in-up"
                         data-aos-duration="1000"
@@ -144,7 +150,7 @@ const Navbar = () => {
               <button
                 data-aos="zoom-in"
                 data-aos-duration="1500"
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("/loginPage")}
                 className="bg-primary hover:bg-darkPri md:py-2 md:px-4 py-1.5 px-3 text-sm md:text-base rounded-lg flex flex-row gap-2 justify-center items-center font-medium"
               >
                 Login

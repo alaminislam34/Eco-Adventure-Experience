@@ -3,7 +3,12 @@ import { FaGoogle } from "react-icons/fa";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
 import { Link, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+  updateProfile,
+} from "firebase/auth";
 import auth from "../firebase/firebase.config";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -12,8 +17,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState("");
   const [error, setError] = useState(null);
-  const { show, setShow, setUser, signUpWithGoogle } =
-    useContext(ProviderContext);
+  const { show, setShow, setUser } = useContext(ProviderContext);
   const navigate = useNavigate();
 
   const validatePassword = (value) => {
@@ -55,6 +59,17 @@ const SignUp = () => {
         })
           .then(() => {})
           .catch(() => {});
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  };
+  const googleProvider = new GoogleAuthProvider();
+  const handleSignUpWithGoogle = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+        navigate("/");
       })
       .catch((error) => {
         setError(error);
@@ -161,7 +176,8 @@ const SignUp = () => {
           </Link>
         </p>
         <button
-          onClick={signUpWithGoogle}
+          type="button"
+          onClick={handleSignUpWithGoogle}
           className="btn bg-base-300 hover:bg-primary text-black"
         >
           <FaGoogle />

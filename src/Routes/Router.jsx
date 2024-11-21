@@ -12,6 +12,9 @@ import PrivateRoute from "./PrivateRoute";
 import Profile from "../components/Profile";
 import GoogleMeet from "../pages/GoogleMeet";
 import About from "../pages/About";
+import Blog from "../components/Blog";
+import LoginPage from "../pages/LoginPage";
+import ForgetPassword from "../components/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +22,18 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "/login",
-        element: <Login />,
+        path: "/loginPage",
+        element: <LoginPage />,
+        children: [
+          {
+            path: "/loginPage",
+            element: <Login />,
+          },
+          {
+            path: "/loginPage/forgetPassword",
+            element: <ForgetPassword />,
+          },
+        ],
       },
       {
         path: "/signUp",
@@ -31,7 +44,10 @@ const router = createBrowserRouter([
         element: <About />,
         loader: () => fetch("/guides.json"),
       },
-
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
       {
         path: "/adventure",
         element: <AdventurePlace />,

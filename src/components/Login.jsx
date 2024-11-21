@@ -3,21 +3,36 @@ import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
 import auth from "../firebase/firebase.config";
 import Aos from "aos";
 
 const Login = () => {
   const [error, setError] = useState(null);
   const location = useLocation();
-  const { show, setShow, setUser, signUpWithGoogle } =
-    useContext(ProviderContext);
+  const { show, setShow, setUser } = useContext(ProviderContext);
   const navigate = useNavigate();
+
   const handleSignIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        setUser(result.user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  };
+  const googleProvider = new GoogleAuthProvider();
+  const handleSignUpWithGoogle = () => {
+    signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
         navigate(location?.state ? location.state : "/");
@@ -47,7 +62,7 @@ const Login = () => {
           Login
         </h2>
         {error ? (
-          <p className="text-red-500 text-sm text-center my-2">
+          <p className="text-red-500 text-xs text-center my-2">
             {error.message}
           </p>
         ) : (
@@ -80,15 +95,20 @@ const Login = () => {
             {show ? <LiaEyeSolid /> : <LiaEyeSlashSolid />}
           </button>
         </div>
-        <button
+        <Link
+          to="/loginPage/forgetPassword"
           data-aos="zoom-in-down"
           data-aos-duration="1500"
           className="underline text-sm font-semibold text-left pl-2"
         >
           Forget Password
-        </button>
+        </Link>
+
         <div data-aos="zoom-in-down" data-aos-duration="1800">
-          <button className="py-1.5 md:py-2 px-2 md:px-3 rounded-md bg-primary hover:bg-darkPri font-semibold text-sm md:text-base lg:text-lg w-full">
+          <button
+            type="submit"
+            className="py-1.5 md:py-2 px-2 md:px-3 rounded-md bg-primary hover:bg-darkPri font-semibold text-sm md:text-base lg:text-lg w-full"
+          >
             Login
           </button>
         </div>
@@ -105,7 +125,8 @@ const Login = () => {
         </p>
         <div data-aos="zoom-in-down" data-aos-duration="2000">
           <button
-            onClick={signUpWithGoogle}
+            type="button"
+            onClick={handleSignUpWithGoogle}
             className="btn bg-base-300 hover:bg-primary text-black w-full text-sm md:text-base"
           >
             <FaGoogle />
