@@ -24,11 +24,11 @@ const About = () => {
         className="h-[40vh] w-full relative"
       >
         <img
-          className="w-full h-full object-cover bg-center filter brightness-50"
+          className="w-full h-full object-cover bg-center filter brightness-75"
           src={about}
           alt=""
         />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold font-merienda text-2xl md:text-3xl lg:text-5xl">
+        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-stroke font-merienda text-2xl md:text-3xl lg:text-5xl">
           About
         </h1>
       </div>

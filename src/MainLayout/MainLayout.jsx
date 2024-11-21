@@ -17,6 +17,20 @@ const MainLayout = () => {
         enable: true,
         distance: 100,
       },
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+            maxParticles: 50,
+          },
+        },
+        {
+          breakpoint: 425,
+          options: {
+            maxParticles: 30,
+          },
+        },
+      ],
     });
   }, []);
   return (

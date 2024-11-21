@@ -22,7 +22,7 @@ const Blog = () => {
             <h3
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700"
+              className="text-2xl md:text-4xl font-extrabold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600 py-2"
             >
               Hiking Adventures
             </h3>
@@ -152,7 +152,7 @@ const Blog = () => {
             data-aos-duration="1000"
             className="flex justify-center items-center my-4 md:my-6"
           >
-            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+            <h3 className="text-2xl md:text-4xl font-extrabold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
               Extreme Adventures
             </h3>
           </div>
@@ -281,7 +281,7 @@ const Blog = () => {
             data-aos-duration="1000"
             className="flex justify-center items-center my-4 md:my-6"
           >
-            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+            <h3 className="text-2xl md:text-4xl font-extrabold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
               Nature Walks
             </h3>
           </div>
@@ -449,7 +449,7 @@ const Blog = () => {
             data-aos-duration="1000"
             className="flex justify-center items-center my-4 md:my-6"
           >
-            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+            <h3 className="text-2xl md:text-4xl font-extrabold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
               Wellness Adventures
             </h3>
           </div>
