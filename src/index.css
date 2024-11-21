@@ -21,3 +21,34 @@ a.active {
 footer li {
   font-size: 14px;
 }
+.Blog p {
+  font-size: 16px;
+}
+.FooterText p {
+  font-size: 16px;
+}
+.background {
+  position: fixed;
+  display: block;
+  background: linear-gradient(to bottom, #d8ecf3, #f9f9f9, #b0c4de);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .Blog p {
+    font-size: 15px;
+  }
+  .FooterText p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .Blog p {
+    font-size: 14px;
+  }
+  .FooterText p {
+    font-size: 14px;
+  }
+}

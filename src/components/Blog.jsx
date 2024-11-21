@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className="bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8] overflow-hidden">
+    <div className="Blog bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8] overflow-hidden">
       <div
         className="w-full h-[50vh] justify-center items-center bg-blog bg-center"
         data-aos="zoom-in"
@@ -71,7 +71,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               1. Reconnect with Nature:
             </p>
@@ -82,7 +82,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               2. Physical and Mental Benefits:
             </p>
@@ -99,7 +99,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               3. Adventure and Discovery:
             </p>
@@ -119,7 +119,7 @@ const Blog = () => {
               data-aos-duration="1000"
               className="list-disc list-inside space-y-2"
             >
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 Gear Checklist:
               </p>
               <li>
@@ -196,7 +196,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               1. Adrenaline Rush:
             </p>
@@ -207,7 +207,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               2. Personal Growth:
             </p>
@@ -225,7 +225,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               Famous Destinations
             </p>
@@ -240,7 +240,7 @@ const Blog = () => {
             </li>
 
             <p data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">Benefits:</p>
+              <p className="text-lg md:text-xl font-semibold my-2">Benefits:</p>
               <li>
                 Physical Fitness: Many activities demand strength, endurance,
                 and agility.
@@ -256,7 +256,9 @@ const Blog = () => {
             </p>
 
             <h3 data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">Challenges:</p>
+              <p className="text-lg md:text-xl font-semibold my-2">
+                Challenges:
+              </p>
               <li>
                 Risk Factor: Extreme adventures carry inherent risks, requiring
                 proper training and safety measures.
@@ -327,7 +329,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               1. Connect with Nature:
             </p>
@@ -339,14 +341,14 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               2.Physical Fitness:
             </p>
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               Water and Snacks:
             </p>
@@ -357,7 +359,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               Navigation Tools:
             </p>
@@ -365,8 +367,12 @@ const Blog = () => {
               Use a map, GPS, or a mobile app to stay on track, especially if
               you’re walking in unfamiliar areas.
             </p>
-            <ul data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside"
+            >
+              <p className="text-lg md:text-xl font-semibold my-2">
                 Tips for an Enjoyable Nature Walk
               </p>
               <li>
@@ -386,8 +392,12 @@ const Blog = () => {
                 or disturb the natural surroundings.
               </li>
             </ul>
-            <ul data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside"
+            >
+              <p className="text-lg md:text-xl font-semibold my-2">
                 Benefits of Nature Walks
               </p>
               <li>
@@ -410,14 +420,14 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               3. Adventure and Discovery:
             </p>
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               Conclusion:
             </p>
@@ -485,7 +495,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               1. Escape from Stress:
             </p>
@@ -496,7 +506,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               2. Improve Overall Health:
             </p>
@@ -507,7 +517,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               3. Reconnect with Yourself:
             </p>
@@ -523,8 +533,12 @@ const Blog = () => {
             >
               Popular Types of Wellness Adventures
             </h4>
-            <ul data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside"
+            >
+              <p className="text-lg md:text-xl font-semibold my-2">
                 1. Yoga Retreats
               </p>
               <li>
@@ -537,7 +551,7 @@ const Blog = () => {
                 <li>Ubud, Bali</li>
                 <li>Sedona, USA</li>
               </li>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 1. Spa and Detox Escapes
               </p>
               <li>
@@ -551,8 +565,12 @@ const Blog = () => {
                 <li>Kerala, India</li>
               </li>
             </ul>
-            <ul data-aos="zoom-in-up" data-aos-duration="1000">
-              <p className="text-lg md:text-xl font-medium my-2">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside"
+            >
+              <p className="text-lg md:text-xl font-semibold my-2">
                 Essentials for a Wellness Adventure
               </p>
               <li>
@@ -576,39 +594,43 @@ const Blog = () => {
                 and practices.
               </li>
             </ul>
-            <ul data-aos="zoom-in-up" data-aos-duration="1000">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside"
+            >
               <p className="text-xl md:text-2xl font-medium my-2">
                 Benefits of Wellness Adventures
               </p>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 1. Physical Health Boost:
               </p>
               <p>
                 Yoga, spa treatments, and nutritious food improve flexibility,
                 reduce pain, and enhance overall physical health.
               </p>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 2. Mental Clarity:
               </p>
               <p>
                 Mindfulness practices like meditation help reduce anxiety,
                 improve focus, and increase self-awareness.
               </p>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 3. Emotional Balance:
               </p>
               <p>
                 Spending time in peaceful environments fosters emotional healing
                 and resilience.
               </p>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 4. Connection with Nature:
               </p>
               <p>
                 Many wellness adventures are set in natural surroundings,
                 allowing you to recharge in the beauty of the outdoors.
               </p>
-              <p className="text-lg md:text-xl font-medium my-2">
+              <p className="text-lg md:text-xl font-semibold my-2">
                 5. Long-Term Lifestyle Changes:
               </p>
               <p>
@@ -619,7 +641,7 @@ const Blog = () => {
             <p
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="text-lg md:text-xl font-medium my-2"
+              className="text-lg md:text-xl font-semibold my-2"
             >
               Conclusion:
             </p>

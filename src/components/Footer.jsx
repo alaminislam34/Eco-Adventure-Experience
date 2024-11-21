@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer footer-center gap-4 bg-[#333333] text-[#F5F5F5] p-6 md:p-10">
+    <footer className="footer footer-center gap-4 bg-[#333333] text-[#F5F5F5] p-6 md:p-10 z-10 relative">
       <h3
         data-aos="zoom-out-up"
         data-aos-duration="1000"
@@ -8,30 +8,30 @@ const Footer = () => {
       >
         Eco Adventure
       </h3>
-      <nav className=" md:w-11/12 mx-auto flex flex-col md:flex-row justify-start md:justify-between items-start gap-6">
+      <nav className="FooterText md:w-11/12 mx-auto flex flex-col md:flex-row justify-start md:justify-between items-start gap-6">
         <ul
           className="flex flex-col text-left gap-2"
           data-aos="zoom-out-up"
           data-aos-duration="1000"
         >
           <li className="text-base md:text-lg font-semibold">Services</li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Guided Nature Tours
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </p>
+          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             {" "}
             Adventure Trekking & Camping
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </p>
+          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             {" "}
             Wildlife Safaris
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </p>
+          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Kayaking & River Adventures
-          </li>
-          <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
+          </p>
+          <p className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
             Eco-Friendly Accommodation
-          </li>
+          </p>
         </ul>
         <ul
           data-aos="zoom-out-up"
@@ -102,13 +102,13 @@ const Footer = () => {
             </svg>
           </a>
         </div>
+        <aside>
+          <p>
+            Copyright © {new Date().getFullYear()} - All right reserved by ACME
+            Industries Ltd
+          </p>
+        </aside>
       </nav>
-      <aside>
-        <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by ACME
-          Industries Ltd
-        </p>
-      </aside>
     </footer>
   );
 };
