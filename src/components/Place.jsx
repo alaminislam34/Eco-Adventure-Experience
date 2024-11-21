@@ -1,14 +1,15 @@
 import Loader from "../components/Loader";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import { ProviderContext } from "../ContextProvider/Provider";
 
 const Place = () => {
   const [data, setData] = useState([]);
   const allData = useLoaderData();
-
+  const { handleDetailsId } = useContext(ProviderContext);
   const navigate = useNavigate();
   useEffect(() => {
     if (allData) {
@@ -81,6 +82,7 @@ const Place = () => {
                 <div data-aos="zoom-in-up" data-aos-duration="1800">
                   <Link
                     to={`/details/${place.id}`}
+                    onClick={() => handleDetailsId(place.id)}
                     className="py-1.5 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090]  text-white hover:bg-darkPri btn rounded-md group"
                   >
                     <span className=" flex flex-row gap-1 items-center justify-center group-hover:scale-95 duration-300">

@@ -171,7 +171,10 @@ const SignUp = () => {
           data-aos-delay="100"
         >
           Already have an account ?
-          <Link to="/login" className="text-darkPri font-bold underline pl-2">
+          <Link
+            to="/loginPage"
+            className="text-darkPri font-bold underline pl-2"
+          >
             Login
           </Link>
         </p>

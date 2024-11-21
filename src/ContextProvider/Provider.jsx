@@ -12,6 +12,10 @@ const Provider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [Id, setId] = useState();
+  const handleDetailsId = (id) => {
+    setId(id);
+  };
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -31,6 +35,8 @@ const Provider = ({ children }) => {
     setData,
     loading,
     setLoading,
+    Id,
+    handleDetailsId,
   };
   return (
     <ProviderContext.Provider value={info}>{children}</ProviderContext.Provider>

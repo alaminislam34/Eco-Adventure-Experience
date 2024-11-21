@@ -8,9 +8,9 @@ const Footer = () => {
       >
         Eco Adventure
       </h3>
-      <nav className="FooterText md:w-11/12 mx-auto flex flex-col md:flex-row justify-start md:justify-between items-start gap-6">
+      <nav className="FooterText md:w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-start md:justify-between items-start gap-6">
         <ul
-          className="flex flex-col text-left gap-2"
+          className="flex flex-col text-left gap-2 justify-start w-full"
           data-aos="zoom-out-up"
           data-aos-duration="1000"
         >
@@ -36,7 +36,7 @@ const Footer = () => {
         <ul
           data-aos="zoom-out-up"
           data-aos-duration="1000"
-          className="flex flex-col gap-2 text-left"
+          className="flex flex-col gap-2 text-left w-full"
         >
           <li className="text-base md:text-lg font-semibold">Quick Links</li>
           <li className="hover:underline hover:text-[#FFEB3B] cursor-pointer">
@@ -52,7 +52,7 @@ const Footer = () => {
         <ul
           data-aos="zoom-out-up"
           data-aos-duration="1000"
-          className="flex flex-col gap-2 text-left"
+          className="flex flex-col gap-2 text-left w-full"
         >
           <li className="text-base md:text-lg font-semibold">Contact Info</li>
           <p></p>
@@ -102,10 +102,10 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <aside>
+        <aside className="mt-2">
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
-            Industries Ltd
+            Copyright © {new Date().getFullYear()} - All right reserved by
+            Developer Al amin
           </p>
         </aside>
       </nav>

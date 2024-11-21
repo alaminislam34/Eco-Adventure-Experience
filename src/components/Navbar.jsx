@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 import { HiOutlineLogin } from "react-icons/hi";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../ContextProvider/Provider";
 import { signOut } from "firebase/auth";
 import auth from "../firebase/firebase.config";
@@ -12,8 +12,48 @@ import { IoIosArrowDropup } from "react-icons/io";
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [profileDe, setProfileDe] = useState(false);
-  const { user } = useContext(ProviderContext);
+  const { user, Id } = useContext(ProviderContext);
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        document.title = "EcoVent";
+        break;
+      case "/about":
+        document.title = "EcoVent || About";
+        break;
+      case "/blog":
+        document.title = "EcoVent || Blog";
+        break;
+      case "/loginPage":
+        document.title = "EcoVent || Login";
+        break;
+      case "/signUp":
+        document.title = "EcoVent || Sign Up";
+        break;
+      case "/adventure":
+        document.title = "EcoVent || Adventure Place";
+        break;
+      case "/profile":
+        document.title = "EcoVent || Profile";
+        break;
+      case "/profile/updateProfile":
+        document.title = "EcoVent || Update Profile";
+        break;
+      case "/googleMeet":
+        document.title = "EcoVent || Meet";
+        break;
+      case `/details/${Id}`:
+        document.title = `EcoVent || Details ${Id}`;
+        break;
+      case "/loginPage/forgetPassword":
+        document.title = "EcoVent || Forget Password";
+        break;
+    }
+  }, [location.pathname, Id]);
 
   const handleProfileDetailsShow = () => {
     setProfileDe(!profileDe);
@@ -82,14 +122,24 @@ const Navbar = () => {
             </h3>
           </div>
           <div
-            className="flex-row *:py-1 *:px-4 *:rounded-t-md hidden md:flex"
+            className="flex-row gap-4 *:py-1 *:px-4 *:rounded-md hidden md:flex"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            {user && <NavLink to="/profile">Profile</NavLink>}
+            <NavLink className="hover:bg-primary duration-300" to="/">
+              Home
+            </NavLink>
+            <NavLink className="hover:bg-primary duration-300" to="/about">
+              About
+            </NavLink>
+            <NavLink className="hover:bg-primary duration-300" to="/blog">
+              Blog
+            </NavLink>
+            {user && (
+              <NavLink className="hover:bg-primary duration-300" to="/profile">
+                Profile
+              </NavLink>
+            )}
           </div>
           <div
             className="flex flex-row gap-2 items-center z-50"
@@ -100,7 +150,7 @@ const Navbar = () => {
               <div className="relative z-[1000] ">
                 <button
                   onClick={handleProfileDetailsShow}
-                  className="tooltip tooltip-bottom hover:tooltip-open"
+                  className="tooltip tooltip-bottom hover:tooltip-open tooltip-warning"
                   data-tip={user.displayName}
                 >
                   {user?.photoURL ? (
