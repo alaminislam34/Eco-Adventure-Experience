@@ -1,12 +1,40 @@
 const Blog = () => {
   return (
-    <div className="bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8]">
+    <div className="bg-gradient-to-b from-[#f5f7fa] to-[#dce1e8] overflow-hidden">
+      <div
+        className="w-full h-[50vh] justify-center items-center bg-blog bg-center"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <div className="z-20 text-white w-full h-full flex justify-center items-center bg-black/30">
+          <h2
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            className="text-2xl md:text-3xl lg:text-5xl font-extrabold font-merienda text-stroke"
+          >
+            Adventure Blog
+          </h2>
+        </div>
+      </div>
       <section className="w-11/12 mx-auto py-4 flex flex-col gap-6 md:gap-12">
         <div className="space-y-2">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4">
-            <div className=" ">
-              <h2 className="text-xl md:text-2xl lg:text-3xl my-2 font-semibold font-merienda ">
-                Hiking Adventures: Explore the Great Outdoors
+          <div className="flex justify-center items-center my-4 md:my-6">
+            <h3
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700"
+            >
+              Hiking Adventures
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4 justify-center items-center">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              className=" "
+            >
+              <h2 className="text-xl md:text-2xl my-2 font-semibold font-merienda ">
+                Explore the Great Outdoors
               </h2>
               <p className="text-base md:text-lg lg:text-xl font-medium">
                 Introduction:{" "}
@@ -22,7 +50,7 @@ const Blog = () => {
                 worldwide.
               </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-left" data-aos-duration="1000">
               <img
                 src="https://wittypen.com/blog/wp-content/uploads/2017/08/Trekking-the-himalayas.webp"
                 alt=""
@@ -32,21 +60,33 @@ const Blog = () => {
 
           <div>
             <div className="flex justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 border-t-2 border-darkPri inline-block pt-2">
-                Why Go Hiking?
+              <h3
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 "
+              >
+                Why Go Hiking <span className="text-darkPri">?</span>
               </h3>
             </div>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               1. Reconnect with Nature:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Hiking allows you to escape the hustle and bustle of everyday life
               and immerse yourself in the serenity of the natural world.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               2. Physical and Mental Benefits:
             </p>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <li>
                 Physical: It improves cardiovascular health, builds endurance,
                 and strengthens muscles.
@@ -56,19 +96,29 @@ const Blog = () => {
                 mindfulness.
               </li>
             </ul>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               3. Adventure and Discovery:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Every trail is unique, offering breathtaking views, hidden
               waterfalls, or encounters with wildlife.
             </p>
-            <h3>Hiking Essentials: What You Need to Know</h3>
-            <p>
+            <h3 data-aos="zoom-in-up" data-aos-duration="1000">
+              Hiking Essentials: What You Need to Know
+            </h3>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Before you hit the trail, preparation is key. Here are the
               essentials for a safe and enjoyable hike:
             </p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="list-disc list-inside space-y-2"
+            >
               <p className="text-lg md:text-xl font-medium my-2">
                 Gear Checklist:
               </p>
@@ -97,16 +147,25 @@ const Blog = () => {
         </div>
         <div className="border-b-2 border-darkPri"></div>
         <div className="space-y-2">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4">
-            <div>
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            className="flex justify-center items-center my-4 md:my-6"
+          >
+            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+              Extreme Adventures
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4 justify-center items-center">
+            <div data-aos="zoom-in-right" data-aos-duration="1000">
               <img
                 src="https://res.cloudinary.com/hfyvkoyi1/image/upload/c_scale,f_auto,h_1280,q_auto/Arctic-Adventures-Katla-Ice-Cave-Myrdalsjokull-1_fleroq.jpg"
                 alt=""
               />
             </div>
-            <div className="">
+            <div data-aos="zoom-in-left" data-aos-duration="1000" className="">
               <h2 className="text-xl md:text-2xl lg:text-3xl my-2 font-semibold font-merienda ">
-                Extreme Adventures: Pushing Your Limits
+                Pushing Your Limits
               </h2>
               <p className="text-base md:text-lg lg:text-xl font-medium">
                 Introduction:
@@ -124,40 +183,63 @@ const Blog = () => {
           </div>
 
           <div>
-            <div className="flex justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 border-t-2 border-darkPri inline-block pt-2">
-                Why Choose Extreme Adventures?
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="flex justify-center items-center"
+            >
+              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 ">
+                Why Choose Extreme Adventures{" "}
+                <span className="text-darkPri">?</span>
               </h3>
             </div>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               1. Adrenaline Rush:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               The rush of adrenaline during extreme activities heightens your
               senses and gives you an unparalleled feeling of being alive.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               2. Personal Growth:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Pushing your limits in extreme conditions builds resilience,
               courage, and confidence.
             </p>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <li>Skydiving</li>
               <li>
                 What is it? Jumping from an aircraft at 10,000+ feet and
                 free-falling before opening your parachute.
               </li>
             </ul>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               Famous Destinations
             </p>
-            <li>Interlaken, Switzerland</li>
-            <li>Dubai Palm Drop Zone, UAE</li>
-            <li>Queenstown, New Zealand</li>
+            <li data-aos="zoom-in-up" data-aos-duration="1000">
+              Interlaken, Switzerland
+            </li>
+            <li data-aos="zoom-in-up" data-aos-duration="1000">
+              Dubai Palm Drop Zone, UAE
+            </li>
+            <li data-aos="zoom-in-up" data-aos-duration="1000">
+              Queenstown, New Zealand
+            </li>
 
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">Benefits:</p>
               <li>
                 Physical Fitness: Many activities demand strength, endurance,
@@ -173,7 +255,7 @@ const Blog = () => {
               </li>
             </p>
 
-            <h3>
+            <h3 data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">Challenges:</p>
               <li>
                 Risk Factor: Extreme adventures carry inherent risks, requiring
@@ -192,10 +274,23 @@ const Blog = () => {
         </div>
         <div className="border-b-2 border-darkPri"></div>
         <div className="space-y-2">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4">
-            <div className=" ">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            className="flex justify-center items-center my-4 md:my-6"
+          >
+            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+              Nature Walks
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4 justify-center items-center">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              className=" "
+            >
               <h2 className="text-xl md:text-2xl lg:text-3xl my-2 font-semibold font-merienda ">
-                Nature Walks: Discovering Serenity in the Outdoors
+                Discovering Serenity in the Outdoors
               </h2>
               <p className="text-base md:text-lg lg:text-xl font-medium">
                 Introduction:{" "}
@@ -211,7 +306,7 @@ const Blog = () => {
                 all ages.
               </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-left" data-aos-duration="1000">
               <img
                 src="https://www.pelago.com/img/products/PE-Peru/7-day-jungle-survival-training-in-iquitos/87f0241c-3c03-4ad8-b871-bc008596344a_7-day-jungle-survival-training-in-iquitos-xlarge.jpg"
                 alt=""
@@ -220,37 +315,57 @@ const Blog = () => {
           </div>
 
           <div>
-            <div className="flex justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 border-t-2 border-darkPri inline-block pt-2">
-                Why Take a Nature Walk?
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="flex justify-center items-center"
+            >
+              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 ">
+                Why Take a Nature Walk <span className="text-darkPri">?</span>
               </h3>
             </div>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               1. Connect with Nature:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Nature walks allow you to escape the hustle and bustle of everyday
               life. You get to enjoy the sights, sounds, and scents of the
               natural world, from chirping birds to rustling leaves.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               2.Physical Fitness:
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               Water and Snacks:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Stay hydrated and carry light, healthy snacks to refuel during
               your walk.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               Navigation Tools:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Use a map, GPS, or a mobile app to stay on track, especially if
               you’re walking in unfamiliar areas.
             </p>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">
                 Tips for an Enjoyable Nature Walk
               </p>
@@ -271,7 +386,7 @@ const Blog = () => {
                 or disturb the natural surroundings.
               </li>
             </ul>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">
                 Benefits of Nature Walks
               </p>
@@ -292,11 +407,21 @@ const Blog = () => {
                 fostering meaningful connections with others.
               </li>
             </ul>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               3. Adventure and Discovery:
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">Conclusion:</p>
-            <p>
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
+              Conclusion:
+            </p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Nature walks are more than just a way to exercise—they`re an
               opportunity to slow down and rediscover the simple joys of life.
               Whether you`re exploring a forest, walking along a river, or
@@ -309,16 +434,25 @@ const Blog = () => {
         </div>
         <div className="border-b-2 border-darkPri"></div>
         <div className="space-y-2">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4">
-            <div>
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            className="flex justify-center items-center my-4 md:my-6"
+          >
+            <h3 className="text-2xl md:text-4xl font-bold font-merienda mb-6  text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+              Wellness Adventures
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 my-4 justify-center items-center">
+            <div data-aos="zoom-in-right" data-aos-duration="1000">
               <img
                 src="https://www.sivananda.at/wp-content/uploads/2022/08/meditation-retreat.jpg"
                 alt=""
               />
             </div>
-            <div className=" ">
+            <div data-aos="zoom-in-left" data-aos-duration="1000" className=" ">
               <h2 className="text-xl md:text-2xl lg:text-3xl my-2 font-semibold font-merienda ">
-                Wellness Adventures: Journey to Inner Peace and Vitality
+                Journey to Inner Peace and Vitality
               </h2>
               <p className="text-base md:text-lg lg:text-xl font-medium">
                 Introduction:{" "}
@@ -338,37 +472,58 @@ const Blog = () => {
 
           <div>
             <div className="flex justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6 border-t-2 border-darkPri inline-block pt-2">
-                Why Choose Wellness Adventures?
+              <h3
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                className="text-xl md:text-2xl font-semibold font-merienda mt-8 mb-6"
+              >
+                Why Choose Wellness Adventures{" "}
+                <span className="text-darkPri">?</span>
               </h3>
             </div>
 
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               1. Escape from Stress:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Wellness adventures allow you to disconnect from your daily
               responsibilities and immerse yourself in tranquility.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               2. Improve Overall Health:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Activities like yoga, meditation, and healthy eating contribute to
               better physical and mental health.
             </p>
-            <p className="text-lg md:text-xl font-medium my-2">
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
               3. Reconnect with Yourself:
             </p>
-            <p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Spending time in serene environments helps you reflect, find
               clarity, and focus on personal growth.
             </p>
 
-            <h4 className="text-xl md:text-2xl font-semibold my-2">
+            <h4
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-xl md:text-2xl font-semibold my-2"
+            >
               Popular Types of Wellness Adventures
             </h4>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">
                 1. Yoga Retreats
               </p>
@@ -396,7 +551,7 @@ const Blog = () => {
                 <li>Kerala, India</li>
               </li>
             </ul>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-lg md:text-xl font-medium my-2">
                 Essentials for a Wellness Adventure
               </p>
@@ -421,7 +576,7 @@ const Blog = () => {
                 and practices.
               </li>
             </ul>
-            <ul>
+            <ul data-aos="zoom-in-up" data-aos-duration="1000">
               <p className="text-xl md:text-2xl font-medium my-2">
                 Benefits of Wellness Adventures
               </p>
@@ -461,8 +616,14 @@ const Blog = () => {
                 approach to life.
               </p>
             </ul>
-            <p className="text-lg md:text-xl font-medium my-2">Conclusion:</p>
-            <p>
+            <p
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              className="text-lg md:text-xl font-medium my-2"
+            >
+              Conclusion:
+            </p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000">
               Wellness adventures are more than just a vacation—they’re an
               opportunity to heal, grow, and reconnect with your best self. By
               combining relaxation, healthy practices, and the beauty of nature,

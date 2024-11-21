@@ -14,6 +14,9 @@ export default {
         darkPri: "#E0A800",
         secondary: "#B8E1B4",
       },
+      backgroundImage: {
+        blog: "url('https://static.vecteezy.com/system/resources/previews/006/409/443/non_2x/adventure-tour-on-the-theme-of-climbing-trekking-hiking-walking-or-vacation-with-forest-and-mountain-views-in-flat-nature-background-poster-illustration-vector.jpg')",
+      },
     },
   },
   plugins: [require("daisyui")],

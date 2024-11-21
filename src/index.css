@@ -10,11 +10,14 @@
   .text-stroke {
     text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5), 2px 4px 6px rgb(0, 0, 0, 0.5);
   }
+  .stroke {
+    text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.2), 0px 5px 4px rgb(0, 0, 0, 0.2);
+  }
 }
 
 a.active {
   background-color: #e0a800;
 }
-footer li{
+footer li {
   font-size: 14px;
 }
