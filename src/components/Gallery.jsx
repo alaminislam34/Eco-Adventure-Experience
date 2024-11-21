@@ -31,12 +31,12 @@ export default function App() {
           modifier: 1,
         }}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper h-[50vh] lg:h-[70vh] md:w-[80vw] w-full"
+        className="mySwiper h-[50vh] lg:h-[70vh] md:w-[80vw] w-full overflow-hidden"
       >
         {gallery &&
           gallery.map((image) => (
-            <div key={image.id} className="">
-              <SwiperSlide className="aspect-video object-cover bg-center w-[50vw] h-[40vh]">
+            <div key={image.id} className="w-full h-full">
+              <SwiperSlide className="aspect-video object-cover bg-center max-w-lg max-h-[400px]">
                 <img
                   className="w-full h-full object-cover bg-center"
                   src={image.image}

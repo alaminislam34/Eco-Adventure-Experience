@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
+import { ProviderContext } from "../ContextProvider/Provider";
 
 const Details = () => {
   const allData = useLoaderData();
   const [place, setPlace] = useState(null);
   const { id } = useParams();
+  const { handleBooked, book } = useContext(ProviderContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,6 +19,7 @@ const Details = () => {
   if (!place) {
     return <Loader />;
   }
+
   return (
     <section className="w-11/12 mx-auto">
       <div className=" my-6 md:my-8">
@@ -176,12 +179,23 @@ const Details = () => {
                 ))}
               </div>
             </div>
-            <div className="text-left mt-6 flex justify-start items-center">
+            <div className="text-left mt-6 flex flex-row gap-4 md:gap-6 justify-start items-center">
               <button
                 onClick={() => navigate("/meetGoogle")}
                 className="text-sm md:text-base lg:text-lg py-1.5 md:py-2 px-3 md:px-4 bg-darkPri"
               >
                 Talk with Expert
+              </button>
+              <button
+                onClick={() => handleBooked(place.id)}
+                disabled={book == place.id ? "disabled" : ""}
+                className={`py-1.5 md:py-2 px-4 md:px-6 text-sm md:text-base font-semibold bg-darkPri hover:shadow-[inset_2px_4px_10px_0px_#00000090] hover:bg-darkPri btn rounded-md group`}
+              >
+                {book == place.id ? (
+                  <span className="group-hover:scale-95">Booked</span>
+                ) : (
+                  <span className="group-hover:scale-95">Book</span>
+                )}
               </button>
             </div>
           </div>
