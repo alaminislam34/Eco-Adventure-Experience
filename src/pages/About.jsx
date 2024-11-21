@@ -21,15 +21,17 @@ const About = () => {
       <div
         data-aos="zoom-out-up"
         data-aos-duration="1400"
-        className="h-[40vh] w-full relative bg-aboutBg filter brightness-75 flex justify-center items-center"
+        className="h-[40vh] w-full relative bg-aboutBg bg-cover object-cover bg-center "
       >
-        <h1
-          data-aos="zoom-out-up"
-          data-aos-duration="1800"
-          className=" text-white filter brightness-105 font-bold text-stroke font-merienda text-2xl md:text-3xl lg:text-5xl"
-        >
-          About
-        </h1>
+        <div className="w-full h-full bg-black/20 flex justify-center items-center">
+          <h1
+            data-aos="zoom-out-up"
+            data-aos-duration="1800"
+            className=" text-white filter brightness-105 font-bold text-stroke font-merienda text-2xl md:text-3xl lg:text-5xl"
+          >
+            About
+          </h1>
+        </div>
       </div>
       <div className="my-6 md:my-8 lg:my-12">
         <div className="flex justify-center items-center flex-col gap-2">
