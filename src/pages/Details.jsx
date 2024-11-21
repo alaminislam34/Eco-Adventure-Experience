@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import { ProviderContext } from "../ContextProvider/Provider";
+import { ToastContainer } from "react-toastify";
 
 const Details = () => {
   const allData = useLoaderData();
@@ -201,6 +202,7 @@ const Details = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

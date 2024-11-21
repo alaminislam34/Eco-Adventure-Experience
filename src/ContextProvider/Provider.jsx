@@ -3,6 +3,7 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
+import { toast } from "react-toastify";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const ProviderContext = createContext();
@@ -19,7 +20,7 @@ const Provider = ({ children }) => {
   };
   const handleBooked = (id) => {
     setBook(id);
-    console.log(id);
+    toast("Booked Confirm");
   };
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
